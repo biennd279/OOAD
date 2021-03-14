@@ -1,0 +1,57 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	
+%\subsection{Template}
+%	\subsubsection{Mô tả tóm tắt}
+%	\subsubsection{Luồng sự kiện}
+%		\paragraph{Luồng chính}
+%		\paragraph{Luồng thay thế}
+%	\subsubsection{Yêu cầu đặc biệt}
+%	\subsubsection{Điều kiện đầu}
+%	\subsubsection{Điều kiện cuối}
+%	\subsubsection{Các vấn đề mở}
+%	\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Đăng nhập hệ thống}
+	\subsubsection{Mô tả tóm tắt}
+	Người dùng đăng nhập vào hệ thống với tài khoản được cấp sẵn
+	
+	\subsubsection{Luồng sự kiện}
+		\paragraph{Luồng chính}
+		
+		Ca sử dụng này bắt đầu khi người dùng mong muốn đăng nhập vào hệ thống
+		\begin{table}[H]
+			\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+
+				\hline
+				\textbf{Hành động}                        & \textbf{Hệ thống phản hồi}                                                                    & \textbf{Dữ liệu}              
+				\\ \hline
+				1. Người dùng chọn đăng nhập vào hệ thống & 2. Hệ thống yêu cầu người dùng nhập tên hoặc mã số sinh viên hoặc mã số giáo viên và mật khẩu &                               
+				\\ \hline
+				3. Người điền các thông tin               & 4. Hệ thống kiểm định thông tin và chuyển hướng người dùng vào hệ thống.                      & Tên/Mã và mật khẩu người dùng 
+				\\ \hline
+				
+			\end{tabular}
+		\end{table}
+		\paragraph{Luồng thay thế}
+		\begin{itemize}
+			\item Tại bước 3: Người dùng điền thiếu thông tin, hệ thống yêu cầu nhập lại
+			\item Tại bước 4:  Hệ thống kiểm định thông tin đăng nhập sai, hệ thống hiển thị thông tin lỗi, yêu cầu nhập lại. Người dùng có thể tiếp tục lặp lại luồng sự kiện hoặc thoát khỏi trang đăng nhập.
+			
+		\end{itemize}
+	\subsubsection{Yêu cầu đặc biệt}
+	Người dùng đã được quản trị đăng ký tài khoản hệ thống
+	
+	\subsubsection{Điều kiện đầu}
+	Không có
+	
+	\subsubsection{Điều kiện cuối}
+	Nếu ca sử dụng thành công, người dùng đã được đăng nhập vào hệ thống, ngược lại, trạng thái hệ thống không thay đổi.
+	\subsubsection{Các vấn đề mở}
+	Không có
+	
+	\subsubsection{Biểu đồ hoạt động}
+
+	
+\end{document}
