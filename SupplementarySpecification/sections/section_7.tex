@@ -1,0 +1,73 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	
+	\subsection{Yêu cầu định danh}
+	Mục này ghi lại các yêu cầu định danh mà hệ thống mà hệ thống sẽ xác định các thành phần bên ngoài trước khi tương tác với chúng. Ví dụ: người dùng và các ứng dụng bên ngoài.
+	
+	\subsubsection{Học viên}
+		Tối thiểu 99,999\% thời gian, hệ thống sẽ xác định học viên trước khi cho phép thực hiện các ca sử dụng sau:
+		
+		\begin{itemize}
+			\item Tham gia khóa học
+			\item Điểm danh
+			\item Quản lý profile
+			\item Truy cập tài nguyên khóa học đã tham gia
+			\item Tương tác với người dùng khác
+			
+		\end{itemize}
+	
+	\subsubsection{Giáo viên}
+		Tối thiểu 99,999\% thời gian, hệ thống sẽ xác định giáo viên trước khi cho phép thực hiện các ca sử dụng sau
+		\begin{itemize}
+			\item Quản lý khóa học đang dạy
+			\item Quản lý học viên
+			\item Tương tác với học viên
+			\item Truy cập, chỉnh sửa tài nguyên khóa học
+			
+		\end{itemize}
+	
+	\subsubsection{Admin}
+		Tối thiểu 99,999\% thời gian, hệ thống sẽ xác định admin trước khi cho phép thực hiện các ca sử dụng sau:
+		
+		\begin{itemize}
+			\item Quản lý danh sách khóa học của hệ thống
+			\item Quản lý người dùng
+			\item Thêm, sửa, xóa khóa học
+		\end{itemize}
+	
+	\subsection{Yêu cầu bảo vệ}
+	Mục này ghi lại các yêu cầu về khả năng tự bảo vệ trước các tác nhân gây hại trái phép (ví dụ: virus máy tính, trojan, worm, …):
+	\begin{itemize}
+		\item Quét: Hệ thống sẽ quét tất cả dữ liệu và phần mềm đã nhập hoặc tải xuống theo các định nghĩa đã công bố về virus máy tính, worms và Trojan và các chương trình gây hại tương tự khác.
+		\item Khử độc: Nếu có thể, hệ thống sẽ khử độc mọi dữ liệu hoặc phần mềm được tìm thấy có chứa chương trình gây hại đó.
+		\item Ngăn chặn: Hệ thống sẽ xóa tệp bị nhiễm nếu không thể khử độc dữ liệu hoặc phần mềm bị nhiễm.
+		\item Định nghĩa hiện tại: Hệ thống sẽ cập nhật hàng ngày danh sách các định nghĩa được công bố về các chương trình gây hại đã biết.
+		\item Thông báo: Hệ thống sẽ thông báo cho thành viên của nhóm bảo mật nếu phát hiện chương trình có hại trong quá trình quét.
+		
+	\end{itemize}
+	
+	\subsection{Yêu cầu phát hiện xâm nhập}
+	Mục này ghi lại các yêu cầu phát hiện xâm nhập, xác định mức độ mà hệ thống phát hiện cá nhân hoặc chương trình trái phép cố gắng truy cập hoặc sửa đổi dữ liệu trên hệ thống:
+	\begin{itemize}
+		\item Lỗi xác thực lặp đi lặp lại: Tối thiểu 99,99\% thời gian, hệ thống sẽ thông báo cho quản trị viên trong vòng một phút nếu không thể xác minh thành công danh tính của bất kỳ tác nhân nào trong vòng chưa đầy bốn lần thử trong vòng một giờ.
+		\item Lỗi ủy quyền: Tối thiểu 99,99\% thời gian, hệ thống sẽ thông báo cho quản trị viên trong vòng một phút nếu bất kỳ tác nhân nào cố gắng thực hiện ca sử dụng mà không được phép.
+		
+	\end{itemize}
+	
+	\subsection{Yêu cầu quyền riêng tư}
+	
+	Mục tiêu bảo mật của hệ thống là đảm bảo tính bảo mật của tất cả các thông tin được ủy thác cho nó, cho dù được lưu trữ hoặc truyền đạt, ngoại trừ thông tin mà yêu cầu hoạt động công khai rõ ràng.
+	
+	Các yêu cầu bảo mật sau đây chỉ định mức độ mà hệ thống sẽ hỗ trợ ẩn danh và giữ bí mật dữ liệu và thông tin liên lạc của nó khỏi các cá nhân và chương trình trái phép.
+	
+	Quyền riêng tư của người dùng: Tối thiểu 99,999\% thời gian, hệ thống sẽ hạn chế quyền truy cập với thông tin người dùng sau, cho dù được truyền đạt hay lưu trữ:
+	
+	\begin{itemize}
+		\item Thông tin mật khẩu
+		\item Thông tin cá nhân, bao gồm địa chỉ và số điện thoại.
+	\end{itemize}
+	
+	\subsection{Yêu cầu bảo trì hê thống}
+	Hệ thống sẽ đảm bảo rằng các sửa đổi được ủy quyền trong quá trình bảo trì sẽ không vô tình cho phép các cá nhân trái phép truy cập vào hệ thống.
+\end{document}
