@@ -53,5 +53,607 @@
 	
 	\subsubsection{Biểu đồ hoạt động}
 
+\subsection{Quản lý thông tin cá nhân}
+\subsubsection{Mô tả tóm tắt}
+Người dùng cung cấp thông tin cho hệ thống xác thực lúc đầu và có thể chỉnh sửa, cập nhật thông tin cá nhân khi đăng nhập được vào hệ thống
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi người dùng đăng nhập vào hệ thống
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                 & \textbf{Hệ thống phản hồi}                                            & \textbf{Dữ liệu}            \\ \hline
+		1. Người dùng yêu cầu xem thông tin cá nhân &
+		2. Hệ thống hiển thị các thông tin về người dùng mà người dùng đã cung cấp &
+		Các thông tin về người dùng (họ tên, địa chỉ email, mô tả…) \\ \hline
+		3. Người dùng yêu cầu chỉnh sửa    & 4. Hệ thống hiển thị trang chỉnh sửa thông tin cá nhân của người dùng &                             \\ \hline
+		5. Người dùng chỉnh sửa và lưu lại & 6. Hệ thống lưu trữ dữ liệu, gửi thông báo đã lưu cho người dùng      & Các thông tin về người dùng \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 5: Người dùng không lưu, hệ thống gửi thông báo xác nhận hủy bỏ việc chỉnh sửa, nếu người dùng đồng ý thì chuyển sang hiển thị trang thông tin người dùng ban đầu.
+	\item Tại bước 6: Người dùng nhập sai cú pháp hoặc điền thiếu một số thông tin, hệ thống yêu cầu nhập lại.
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Không có
+
+\subsubsection{Điều kiện đầu}
+Người dùng hệ thống, đã đăng nhập hệ thống và có nhu cầu xem hoặc chỉnh sửa thông tin cá nhân.
+
+\subsubsection{Điều kiện cuối}
+Hệ thống lưu trữ dữ liệu thông tin người dùng đã chỉnh sửa.
+
+\subsubsection{Các vấn đề mở}
+Xác thực tính đúng đắn của thông tin người dùng đã chỉnh sửa
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Tương tác với người dùng khác}
+\subsubsection{Mô tả tóm tắt}
+Hệ thống có các tác vụ như nhắn tin thảo luận giữa những người dùng trong cùng một khóa học. Người dùng có thể xóa tin nhắn, xóa cuộc trò chuyện ở phía mình.
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+	Bắt đầu khi người dùng đã đăng nhập vào hệ thống
+
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                             & \textbf{Hệ thống phản hồi}                                & \textbf{Dữ liệu}                       \\ \hline
+		1. Tại trang chủ, người dùng chọn mục nhắn tin & 2. Hệ thống chuyển giao diện hiển thị các cuộc trò chuyện & Thông tin các cuộc trò chuyện          \\ \hline
+		3. Người dùng tìm kiếm tên người dùng khác     & 4. Hệ thống tìm kiếm người dùng trong các lớp học         & Danh sách những người có chung lớp học \\ \hline
+		5. Người dùng chọn người dùng mình muốn nhắn tin         & 6. Hệ thống trả về cuộc trò chuyện của hai người  & Tin nhắn và thông tin về cuộc trò chuyện \\ \hline
+		7. Người dùng nhắn tin với người dùng khác trên hệ thống & 6. Hệ thống cập nhật tin nhắn của cuộc trò chuyện & Những tin nhắn trong cuộc trò chuyện     \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 7: người dùng chọn một tin nhắn trong cuộc trò chuyện và chọn xóa, hệ thống thông báo xác nhận và xóa tin nhắn ra khỏi cuộc trò chuyện bên phía người dùng.
+	\item Tại bước 2: Sau khi hệ thống hiển thị danh sách các cuộc trò chuyện, người dùng chọn một cuộc trò chuyện bất kỳ và xóa, hệ thống thông báo xác nhận và xóa cuộc trò chuyện khỏi mục tin nhắn bên phía người dùng.
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Người dùng phải có trong ít nhất một khóa học
+
+\subsubsection{Điều kiện đầu}
+Người dùng sử dụng hệ thống, đã đăng nhập vào hệ thống và muốn trao đổi với người dùng cùng khóa học
+
+\subsubsection{Điều kiện cuối}
+Người dùng nhắn tin được với người dùng khác
+
+\subsubsection{Các vấn đề mở}
+Bảo mật thông tin cuộc trò chuyện của người dùng
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Tham gia lớp học}
+\subsubsection{Mô tả tóm tắt}
+Sinh viên truy cập lớp học để học tập và tham gia các phiên học trực tuyến.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi người dùng truy cập vào hệ thống, đã có lớp học đang được diễn ra
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                                           & \textbf{Hệ thống phản hồi}                                                   & \textbf{Dữ liệu}           \\ \hline
+		1. Sinh viên chọn lớp học phần tại danh mục các lớp học phần & 2. Hệ thống hiển thị danh sách lớp của sinh viên                             & Danh sách các lớp học phần \\ \hline
+		3. Sinh viên truy cập lớp học phần                           & 4. Hệ thống chuyển đến hiển thị giao diện lớp học phần mà sinh viên truy cập & Thông tin lớp học phần     \\ \hline
+		5. Sinh viên chọn tham gia lớp học trực tuyến                & 6. Hệ thống gửi thông báo cho sinh viên về phiên học đang được diễn ra       &                            \\ \hline
+		7. Sinh viên tham gia lớp học có thể theo dõi, thảo luận, tương tác trực tiếp với giảng viên và các sinh viên khác &
+		8. Hệ thống cập nhật các tin nhắn thảo luận &
+		Các tin nhắn thảo luận \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 1, nếu sinh viên không tìm được tên lớp học mình mong muốn thì cần phải tìm lớp học phần và yêu cầu tham gia. Nếu lớp học bị khóa, sinh viên cần phải đợi giảng viên bộ môn hoặc quản trị viên đồng ý thêm vào khóa học, ngược lại, luồng đăng ký được diễn ra như sau
+	\begin{table}[H]
+					\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+			\hline
+			\textbf{Hành động}                          & \textbf{Hệ thống phản hồi}                                    & \textbf{Dữ liệu}          \\ \hline
+			1. Sinh viên tìm kiếm tên lớp học           & 2. Hệ thống hiển thị danh sách lớp môn học liên quan          & Danh sách các lớp môn học \\ \hline
+			3. Sinh viên truy cập lớp môn học mong muốn & 4. Hệ thống hiển thị yêu cầu báo danh để tham gia lớp môn học &                           \\ \hline
+			5. Sinh viên chọn  yêu cầu tham gia lớp học & 6. Hệ thống gửi thông báo thành công cho sinh viên            &                           \\ \hline
+			7. Sinh viên tham gia lớp học &
+			8. Hệ thống cập nhật sinh viên vào danh sách sinh viên của lớp học phần, và cập nhật khóa học vào danh sách khóa học của sinh viên &
+			Thông tin của sinh viên và khóa học \\ \hline
+		\end{tabular}
+	\end{table}
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Không có
+
+\subsubsection{Điều kiện đầu}
+Sinh viên đã được đăng ký sẵn hoặc được thêm vào lớp môn học bởi quản trị viên hoặc giảng viên của môn học
+
+\subsubsection{Điều kiện cuối}
+Người dùng truy cập thành công vào lớp học và tham gia lớp học trực tuyến
+
+\subsubsection{Các vấn đề mở}
+Bảo mật thông tin của buổi học trực tuyến
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Tìm kiếm và khám phá}
+\subsubsection{Mô tả tóm tắt}
+Người dùng có thể xem danh sách các khóa học được mở trong các học kỳ, tìm kiếm lớp học theo tên, giảng viên… Ngoài ra người dùng có thể xem được danh sách những người dùng đang online, các hạn nộp bài, kiểm tra.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi người dùng đăng nhập vào hệ thống
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                          & \textbf{Hệ thống phản hồi}                         & \textbf{Dữ liệu} \\ \hline
+		1. Người dùng muốn tìm kiếm, khám phá &
+		2. Hệ thống hiển thị trang chủ của hệ thống gồm ô tìm kiếm, các bài đăng của quản trị viên, danh sách những người dùng online, hạn bài nộp, danh sách lớp học phần đã đăng kỳ,.. &
+		\\ \hline
+		3. Người dùng nhập dữ liệu muốn tìm kiếm (tên khóa học, tên học kỳ, giảng viên...) và lựa chọn các bộ lọc, tiêu chí có trên giao diện hệ thống rồi xác nhận &
+		4. Hệ thống hiển thị các danh sách các khóa học liên quan &
+		Danh sách khóa học \\ \hline
+		5. Sinh viên chọn  yêu cầu tham gia lớp học & 6. Hệ thống gửi thông báo thành công cho sinh viên &                  \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 2: nếu bộ dữ liệu thông tin không tồn tại, hệ thống thông báo cho người dùng không tồn tại khóa học liên quan và cho người dùng nhập lại dữ liệu để tìm kiếm.
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Không có
+
+\subsubsection{Điều kiện đầu}
+Người dùng đã đăng nhập hệ thống, nhập hoặc chọn dữ liệu tìm kiếm
+
+\subsubsection{Điều kiện cuối}
+Danh sách các lớp học phần phù hợp với dữ liệu tìm kiếm
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Thảo luận trực tuyến}
+\subsubsection{Mô tả tóm tắt}
+Người dùng có thể tham gia bình luận, đặt câu hỏi vào các chủ đề thảo luận. Điều này bao gồm thêm, xóa, sửa bình luận của bản thân.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi người dùng đăng nhập và truy cập vào lớp học phần.
+
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                  & \textbf{Hệ thống phản hồi}     & \textbf{Dữ liệu}   \\ \hline
+		1. Người dùng truy cập vào diễn đàn thảo luận & 2. Hệ thống hiển thị các danh sách chủ đề thảo luận đã được tạo ra.    & Nội dung các cuộc thảo luận \\ \hline
+		3. Người dùng chọn một chủ đề quan tâm        & 4. Hệ thống hiển thị các bình luận, câu hỏi, phản hồi trong chủ đề đó. & Nội dung cuộc thảo luận     \\ \hline
+		5. Người dùng nhập bình luận và gửi & 6. Hệ thống cập nhật bình luận & Nội dung bình luận \\ \hline
+	\end{tabular}
+\end{table}
+
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 3: Người dùng không chọn một trong các chủ đề đã có mà tạo mới một chủ đề, hệ thống cập nhật chủ đề mới.
+	\item Tại bước 5: Người dùng chưa nhập bình luận và ấn gửi, hệ thống thông báo nhập lại bình luận
+	\item Tại bước 6: Người dùng gửi nhầm bình luận, người dùng có thể chọn bình luận và chọn xóa, hệ thống thông báo xác nhận xóa bình luận, và cập nhật xóa bình luận khỏi chủ đề.
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Các chủ đề được tạo mới bởi giảng viên sẽ được thông báo tới các sinh viên trong lớp học
+
+\subsubsection{Điều kiện đầu}
+Người dùng đã đăng nhập và tham gia lớp học phần.
+
+\subsubsection{Điều kiện cuối}
+Người dùng thảo luận trong diễn đàn
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Thực hiện bài kiểm tra trực tuyến}
+\subsubsection{Mô tả tóm tắt}
+Sinh viên làm bài kiểm tra do giáo viên tạo trên hệ thống trong một khoảng thời gian và số lần truy cập được chỉ định sẵn. Có thể nộp bài trước khi kết thúc thòi gian và bài được tự động nộp lên hệ thống khi thời gian làm bài kết thúc.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi người dùng đăng nhập và truy cập vào lớp học phần.
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động} &
+		\textbf{Hệ thống phản hồi} &
+		\textbf{Dữ liệu} \\ \hline
+		1. Sinh viên truy cập danh sách lớp học phần của mình &
+		2. Hệ thống hiển thị danh sách lớp học phần của sinh viên &
+		Danh sách lớp học phần \\ \hline
+		3. Sinh viên chọn lớp học phần &
+		4.  Hệ thống hiển thị trang lớp học phần &
+		Thông tin về lớp học phần mà sinh viên truy cập \\ \hline
+		5. Sinh viên truy cập vào bài kiểm tra trong lớp học phần &
+		6. Hệ thống hiển thị thông tin về bài kiểm tra (số lần truy cập, thời gian truy cập, thời gian làm bài,...) &
+		Thông tin về bài kiểm tra \\ \hline
+		7. Sinh viên chọn bắt đầu kiểm tra &
+		8. Hệ thống thông báo xác nhận bắt đầu tính giờ và chuyển đến bài kiểm tra &
+		Thông tin và nội dung bài kiểm tra \\ \hline
+		9. Sinh viên làm bài kiểm tra &
+		10. Hệ thống cập nhật bài làm của sinh viên &
+		Nội dung bài làm \\ \hline
+		11. Sinh viên chọn hoàn thành và kết thúc &
+		12. Hệ thống thông báo xác nhận và điều hướng sang trang xem lại bài thi &
+		Nội dung bài làm \\ \hline
+		13. Sinh viên hoàn thành xem lại bài thi &
+		14. Hệ thống điều hướng sang trang kết quả và trở lại trang của khóa học &
+		Kết quả bài làm \\ \hline
+	\end{tabular}
+\end{table}
+
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 7: sinh viên chưa chọn hoàn thành và kết thúc trước khi hết thời gian, hệ thống sẽ tự động lưu và nộp bài làm rồi chuyển hướng đến trang kết quả tại bước 10.
+	\item Tại bước 10: nếu số lần làm bài thi lớn hơn 1 thì hệ thống sẽ thông báo thực hiện lại đề thi ở trang kết quả, sinh viên có thể truy cập và thực hiện đề thi cho đến khi hết thời gian của đề hoặc thời gian truy cập đề thi
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Các bài kiểm tra được tạo ra bởi giảng viên và được thông báo tới các sinh viên trong lớp học
+
+\subsubsection{Điều kiện đầu}
+Người dùng đã đăng nhập và tham gia lớp học phần.
+
+\subsubsection{Điều kiện cuối}
+Người dùng thực hiện xong bài kiểm tra.
+
+\subsubsection{Các vấn đề mở}
+Các vấn đề về gian lận trong bài kiểm tra, khó kiểm soát được sinh viên trao đổi, tra tài liệu,...
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Nộp bài tập}
+\subsubsection{Mô tả tóm tắt}
+Sinh viên thực hiện làm bài tập được giao và có thể nộp lên hệ thống với nhiều định dạng (pdf, ảnh, docx,...). Nếu có thời hạn thì sinh viên phải nộp trước thời gian đó.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi người dùng đăng nhập và truy cập vào lớp học phần.
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                                     & \textbf{Hệ thống phản hồi}                                & \textbf{Dữ liệu}                                \\ \hline
+		1. Sinh viên truy cập danh sách lớp học phần của mình  & 2. Hệ thống hiển thị danh sách lớp học phần của sinh viên & Danh sách lớp học phần                          \\ \hline
+		3. Sinh viên chọn lớp học phần                         & 4.  Hệ thống hiển thị trang lớp học phần                  & Thông tin về lớp học phần mà sinh viên truy cập \\ \hline
+		5. Sinh viên truy cập vào bài tập trong lớp học phần   & 6. Hệ thống hiển thị thông tin và nội dung bài tập        & Thông tin về bài tập                            \\ \hline
+		7. Sinh viên đọc hoặc tải nội dung đề để thực hiện làm & 8. Hệ thống lưu thời gian truy cập                        & Nội dung đề và thời gian truy cập bài tập       \\ \hline
+		8. Sinh viên tải bài tập lên hệ thống                  & 9. Hệ thống cập nhật bài làm của sinh viên                & file bài làm                                    \\ \hline
+		10. Sinh viên chọn lưu và nộp bài & 11. Hệ thống thông báo xác nhận và cập nhật bài tập với file bài nộp, thời gian hoàn thành,... & Thời gian hoàn thành, file bài nộp \\ \hline
+	\end{tabular}
+\end{table}
+
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 4: nếu hết thời hạn, theo cài đặt của giảng viên, có 2 trường hợp xảy ra
+	\begin{itemize}
+		\item Sinh viên có thể không thể nộp, hệ thống cập nhật thiếu bài tập
+		\item Sinh viên có thể nộp, hệ thống đánh dấu là nộp muộn
+	\end{itemize}
+	
+	\item Tại bước 7: file nộp bài không hợp lệ hoặc có dung lượng vượt quá dung lượng cho phép thì hệ thống thông báo lỗi và yêu cầu thực hiện lại bước 6.
+	\item Tại bước 8: nếu thời gian đã hết, sinh viên thực hiện chỉnh sửa, hệ thống cập nhật là nộp muộn.
+	\item Sau bước 11: sinh viên chọn bài nộp để chỉnh sửa, hủy bài hoặc bổ sung bài nộp, hệ thống thông báo xác nhận và cập nhật lại bài nộp.
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Các bài tập được tạo ra bởi giảng viên và được thông báo tới các sinh viên trong lớp học.
+
+\subsubsection{Điều kiện đầu}
+Người dùng đã đăng nhập và tham gia lớp học phần.
+
+\subsubsection{Điều kiện cuối}
+Người dùng thực hiện xong bài tập.
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Khám phá lớp học}
+Sinh viên trong lớp học có thể xem điểm số, theo dõi quá trình học của bản thân.
+
+\subsubsection{Mô tả tóm tắt}
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+ Luồng bắt đầu khi sinh viên đăng nhập vào hệ thống và truy cập vào lớp học phần
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                                 & \textbf{Hệ thống phản hồi}                             & \textbf{Dữ liệu}                                \\ \hline
+		1. Sinh viên truy cập danh sách lớp học phần của mình & 2. Hệ thống hiển thị danh sách lớp học phần của sinh viên & Danh sách lớp học phần                          \\ \hline
+		3. Sinh viên chọn lớp học phần                        & 4. Hệ thống hiển thị trang lớp học phần                & Thông tin về lớp học phần mà sinh viên truy cập \\ \hline
+		5. Sinh viên truy cập vào mục quá trình học của lớp học phần &
+		6. Hệ thống hiển thị nội dung học từng tuần và điểm số của sinh viên trong suốt khóa học &
+		Nội dung học tập và điểm số \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+Không có
+
+\subsubsection{Yêu cầu đặc biệt}
+Không có
+
+\subsubsection{Điều kiện đầu}
+Sinh viên đã đăng nhập và đã được thêm vào lớp học phần
+
+\subsubsection{Điều kiện cuối}
+Quá trình học và tổng kết điểm số của sinh viên được hiển thị
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Đánh giá khóa học}
+\subsubsection{Mô tả tóm tắt}
+Sinh viên được yêu cầu cung cấp đánh giá và phản hồi về lớp học sau khi kết thúc khóa học.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Luồng bắt đầu khi sinh viên được yêu cầu làm đánh giá về lớp học
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}              & \textbf{Hệ thống phản hồi}     & \textbf{Dữ liệu} \\ \hline
+		1. Sinh viên truy cập vào mục đánh giá lớp học       & 2. Hệ thống hiển thị nội dung đánh giá & Các đề mục đánh giá            \\ \hline
+		3. Sinh viên thực hiện đánh giá các đề mục đánh giá. & 4. Hệ thống cập nhật điểm đánh giá.    & Dữ liệu đánh giá của sinh viên \\ \hline
+		5. Sinh viên xác nhận gửi đánh giá & 6. Hệ thống lưu dữ liệu đánh giá. &                  \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 1: Nếu đã quá thời hạn đánh giá về lớp học, thông báo cho sinh viên đã hết thời hạn và kết thúc.
+	\item Tại bước 5: Nếu chưa hoàn thành toàn bộ đánh giá, gửi thông báo chưa hoàn thành và yêu cầu hoàn thành.
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Được thực hiện khi kết thúc khóa học.
+
+\subsubsection{Điều kiện đầu}
+Khi lớp học kết thúc và người quản trị đưa ra yêu cầu đánh giá.
+
+\subsubsection{Điều kiện cuối}
+Dữ liệu đánh giá về các lớp học.
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Quản lý hoạt động sinh viên}
+\subsubsection{Mô tả tóm tắt}
+Giảng viên trong khóa học có thể cấp phép truy cập cho sinh viên nếu có yêu cầu, theo dõi quá trình học của sinh viên và cấp huy hiệu cho sinh viên có đóng góp tích cực.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Cấp phép truy cập cho sinh viên: Luồng bắt đầu khi giảng viên đăng nhập vào hệ thống, có sinh viên yêu cầu được tham gia lớp học
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                     & \textbf{Hệ thống phản hồi}                                                                  & \textbf{Dữ liệu}                \\ \hline
+		1.1. Giảng viên truy cập vào thông báo & 1.2. Hệ thống hiển thị yêu cầu truy cập của sinh viên                                       & Thông tin sinh viên và khóa học \\ \hline
+		1.3. Giảng viên chấp nhận yêu cầu &
+		1.4. Hệ thống thông báo xác nhận thành công, hệ thống cập nhật danh sách sinh viên và chuyển hướng đến trang danh sách sinh viên khóa học &
+		Danh sách sinh viên khóa học \\ \hline
+		2.1. Giảng viên chọn một sinh viên     & 2.2. Hệ thống hiển thị thông tin sinh viên và quá trình học tập của sinh viên trong lớp học & Thông tin sinh viên             \\ \hline
+		2.3 Giảng viên chọn cấp huy hiệu       & 2.4. Hệ thống cập nhật huy hiệu cho sinh viên                                               &                                 \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+Tại bước 1.3: Giảng viên không chấp nhận yêu cầu, hệ thống xóa yêu cầu của sinh viên, không thêm mới sinh viên và giữ nguyên giao diện trang thông báo.
+\subsubsection{Yêu cầu đặc biệt}
+Sinh viên có yêu cầu tham gia vào lớp học
+
+\subsubsection{Điều kiện đầu}
+Giảng viên nhận được thông báo có yêu cầu 
+
+\subsubsection{Điều kiện cuối}
+Hệ thống cập nhật danh sách sinh viên khóa học
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Quản lý diễn đàn}
+
+\subsubsection{Mô tả tóm tắt}
+Giảng viên trong lớp có thể sử dụng tính năng diễn đàn để tạo được khu vực cho sinh viên tham gia thảo luận về lớp học, bài học cho sinh viên. 
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Khi mà giảng viên bắt đầu vào được lớp học muốn quản lý.
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                   & \textbf{Hệ thống phản hồi} & \textbf{Dữ liệu}           \\ \hline
+		1. Truy cập vào khu vực thảo luận. & 2. Hệ thống trả về danh sách chủ đề đã có.         & Dữ liệu về các chủ đề.        \\ \hline
+		3. Tạo chủ đề mới.                 & 3.1. Hệ thống lưu lại thông tin chủ đề mới.        & Thông tin về chủ đề mới.      \\ \hline
+		4. Lựa chọn chủ đề đã có           & 4.1. Hệ thống trả về nội dung chủ đề đã thảo luận. & Nội dung chủ đề đã thảo luận. \\ \hline
+		5. Lựa chọn câu trả với để ghim lại. &                            & Câu trả lời được đánh dấu. \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+	Không có.
+
+\subsubsection{Yêu cầu đặc biệt}
+Giảng viên sở hữu hoặc được cấp quyền cho lớp học.
+
+\subsubsection{Điều kiện đầu}
+Người dùng tham gia và truy cập đúng lớp học có quyền.
+
+\subsubsection{Điều kiện cuối}
+Hệ thống lưu lại chỉnh sửa của giảng viên.
+
+\subsubsection{Các vấn đề mở}
+Không.
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Quản lý nội dung lớp học}
+\subsubsection{Mô tả tóm tắt}
+Giảng viên quản lý nội dung được chia sẻ trong lớp học phần. Giảng viên có thể thêm, xóa và sửa tài liệu; hiển thị hoặc ẩn tài liệu có sẵn; di chuyển vị trí tài liệu.
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}              & \textbf{Hệ thống phản hồi}               & \textbf{Dữ liệu} \\ \hline
+		1. Giảng viên truy cập vào lớp học phần của mình                                             & 2. Hệ thống hiển thị danh sách tài liệu của lớp & 3. Tên tài liệu, link tải tài liệu \\ \hline
+		4. Giảng viên bật chế độ chỉnh sửa & 5. Hệ thống hiển thị các lựa chọn chỉnh sửa &                  \\ \hline
+		6. Giảng viên chỉnh sửa tài liệu (sửa, di chuyển, xóa, sao lưu), thêm tài liệu, thêm đề mục. & 7. Hệ thống ghi nhận thay đổi của người dùng    &                                 \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\subsubsection{Yêu cầu đặc biệt}
+Giảng viên cần là người tạo ra lớp học thì mới có thể thực hiện chỉnh sửa.
+
+\subsubsection{Điều kiện đầu}
+Không.
+
+\subsubsection{Điều kiện cuối}
+Hệ thống áp dụng chỉnh sửa của giảng viên.
+
+\subsubsection{Các vấn đề mở}
+Không
+
+\subsubsection{Biểu đồ hoạt động}
+
+
+\subsection{Quản lý danh sách sinh viên}
+\subsubsection{Mô tả tóm tắt}
+Giảng viên có thể thêm, sửa, xóa danh sách sinh viên, sắp xếp danh sách sinh viên theo tên, tìm kiếm sinh viên có trong khóa học.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                                                         & \textbf{Hệ thống phản hồi}                             & \textbf{Dữ liệu} \\ \hline
+		1. Giảng viên truy cập vào danh sách người tham gia &
+		2. Hệ thống hiển thị danh sách tất cả những người tham gia khóa học, bao gồm cả giảng viên &
+		Tên người tham gia, địa chỉ email, thời gian truy cập khóa học gần nhất \\ \hline
+		3. Giảng viên có thể tạo bộ lọc để hiển thị danh sách theo ý muốn             & 4. Hệ thống hiển thị danh sách người tham gia theo bộ lọc &                  \\ \hline
+		5. Giảng viên thêm người tham gia khóa học, sửa thông tin, xóa người tham gia & 6. Hệ thống ghi nhận thay đổi của người dùng              &                  \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\subsubsection{Yêu cầu đặc biệt}
+\subsubsection{Điều kiện đầu}
+\subsubsection{Điều kiện cuối}
+\subsubsection{Các vấn đề mở}
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Dạy học trực tuyến}
+\subsubsection{Mô tả tóm tắt}
+Giáo viên có thể tạo một buổi học trực tuyến để thành viên lớp tham gia. Trong giờ học, giảng viên có thể chia sẻ webcam, màn hình, âm thành và nhắn tin qua văn bản. Ngoài ra, giáo viên có thể quản lý thành viên tham gia giờ học. Giáo viên có thể thêm và loại thành viên trong buổi học, tắt âm thanh của thành viên.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}              & \textbf{Hệ thống phản hồi}                 & \textbf{Dữ liệu} \\ \hline
+		1. Giáo viên truy cập vào khóa học & 2. Hệ thống hiển thị lựa chọn “Tạo buổi học”. &                  \\ \hline
+		3. Giáo viên chọn “Tạo lớp học”.                                  & 4. Hệ thống khởi tạo lớp học trực tuyến và thông báo cho thành viên lớp. &  \\ \hline
+		5. Giáo viên chọn chia sẻ màn hình, chia sẻ âm thanh và hình ảnh. & 6. Hệ thống chuyển dữ liệu hình ảnh và âm thành tới người tham gia khác. &  \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\subsubsection{Yêu cầu đặc biệt}
+Giáo viên phải là người tạo lớp thì mới có thể tạo buổi học.
+
+\subsubsection{Điều kiện đầu}
+Không.
+
+\subsubsection{Điều kiện cuối}
+
+\subsubsection{Các vấn đề mở}
+Không.
+
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Quản lý tài khoản}
+\subsubsection{Mô tả tóm tắt}
+Quản trị viên có quyền cấp phát tài khoản sinh viên và giáo viên trong trường, lấy danh sách tài khoản
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+ Bắt đầu khi quản trị viên đăng nhập vào hệ thống
+ \begin{table}[H]
+ 				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+ 		\hline
+ 		\textbf{Hành động}                                       & \textbf{Hệ thống phản hồi}                            & \textbf{Dữ liệu}    \\ \hline
+ 		1. Quản trị viên truy cập danh sách tài khoản của trường & 2. Hệ thống hiển thị danh sách tài khoản              & Danh sách tài khoản \\ \hline
+ 		3. Quản trị viên chọn cấp mới                            & 4. Hệ thống hiển thị trang đăng ký thêm mới tài khoản &                     \\ \hline
+ 		5. Quản trị viên nhập thông tin của sinh viên và  xác nhận &
+ 		6. Hệ thống thông báo xác nhận và cập nhật thêm mới tài khoản, hiển thị danh sách tài khoản quản trị viên đã đăng ký &
+ 		Thông tin tài khoản \\ \hline
+ 		7. Quản trị viên chọn xuất dữ liệu danh sach             & 8. Hệ thống trả về file trích xuất dữ liệu            & File trích xuất     \\ \hline
+ 	\end{tabular}
+ \end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 5: quản trị viên nhập thiếu hoặc sai thông tin, hệ thống trả lại thông báo
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+\subsubsection{Điều kiện đầu}
+\subsubsection{Điều kiện cuối}
+\subsubsection{Các vấn đề mở}
+\subsubsection{Biểu đồ hoạt động}
+
+\subsection{Quản lý danh sách khóa học}
+\subsubsection{Mô tả tóm tắt}
+Danh sách các lớp học phần được quản trị viên tạo ra từ các dữ liệu của trường. Quản trị viên có thể kiểm soát, thêm mới, sửa đổi hoặc xóa các lớp học của học kỳ.
+
+\subsubsection{Luồng sự kiện}
+\paragraph{Luồng chính}
+Bắt đầu khi quản trị viên đăng nhập vào hệ thống
+\begin{table}[H]
+				\begin{tabular}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+		\hline
+		\textbf{Hành động}                                  & \textbf{Hệ thống phản hồi}                             & \textbf{Dữ liệu} \\ \hline
+		1. Quản trị viên truy cập danh mục quản lý khóa học & 2. Hệ thống hiển thị danh sách các học kỳ              & Danh sách học kỳ \\ \hline
+		3. Quản trị viên chọn tạo mới học kỳ                & 4. Hệ thống hiển thị trang điền thông tin học kỳ       &                  \\ \hline
+		5. Quản trị viên nhập thông tin của học kỳ &
+		6. Hệ thống thông báo xác nhận và cập nhật thêm mới học kỳ. Giao diện được chuyển đến trang học kỳ mới được tạo &
+		Thông tin về học kỳ \\ \hline
+		7. Quản trị viên chọn thêm mới lớp học phần học     & 8. Hệ thống hiển thị trang điền thông tin lớp học phần &                  \\ \hline
+		9. Quản trị viên điền thông tin lớp học phần &
+		10. Hệ thống thông báo xác nhận và thêm mới lớp học phần. &
+		\begin{tabular}[c]{@{}l@{}}Thông tin về lớp học phần:\\ Mã lớp \\ Tên lớp\\ Mã giảng viên\\ Tên giảng viên\\ Số tín  chỉ\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+\paragraph{Luồng thay thế}
+\begin{itemize}
+	\item Tại bước 5,9: quản trị viên nhập thiếu hoặc sai thông tin, hệ thống trả lại thông báo yêu cầu nhập lại.
+	\item Tại bước 9: quản trị viên chọn thêm mới lớp học phần tự động, hệ thống yêu cầu quản trị viên tải lên file thông tin các lớp học phần được mở trong học kỳ, giảng viên tải file lên, hệ thống cập nhật tạo mới các lớp học phần theo danh sách.
+	
+\end{itemize}
+\subsubsection{Yêu cầu đặc biệt}
+Không có.
+
+\subsubsection{Điều kiện đầu}
+Quản trị viên đã đăng nhập vào hệ thống và muốn tạo mới/xóa/chỉnh sửa các lớp học phần của học kỳ.
+
+\subsubsection{Điều kiện cuối}
+Quản trị viên hoàn thành tạo mới/xóa/sửa các lớp học phần
+
+\subsubsection{Các vấn đề mở}
+Hệ thống cần giải quyết được việc tự động thêm mới các lớp học phần và quyền truy cập vào các lớp học phần thông qua dữ liệu được quản trị viên tải lên.
+
+\subsubsection{Biểu đồ hoạt động}
+
+
+	
+
 	
 \end{document}

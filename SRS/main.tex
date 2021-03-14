@@ -26,6 +26,7 @@
 \usepackage{subcaption}
 \usepackage{placeins}
 \usepackage{array}
+\usepackage[inkscapearea=page]{svg}
 
 
 \let\orgautoref\autoref
@@ -51,8 +52,8 @@
 % Create file reference.bib to add 
 \addbibresource{./reference.bib}
 %\makeindex[intoc]
-%\makeglossaries
-%\loadglsentries{glossary}
+\makeglossaries
+\loadglsentries{glossary}
 \graphicspath{ {./images/} {./../images}}
 \DeclareGraphicsExtensions{.png}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
@@ -64,19 +65,18 @@
 	\subfile{cover.tex}
 	\clearpage
 	
-	% \subfile{history.tex}
+	\subfile{history.tex}
 	\clearpage
 	
 	\tableofcontents 
 	\clearpage
 	
 	
-	\listoffigures
+	% \listoffigures
+	% \listoftables
 	
-	\listoftables
-	
-	\printglossary[type=\acronymtype, title=Thuật ngữ viết tắt]
-	\clearpage
+	% \printglossary[type=\acronymtype, title=Thuật ngữ viết tắt]
+	% \clearpage
 	
 	%	\section{Section}
 	%	\subfile{./sections/section1.tex}
@@ -92,17 +92,20 @@
 	% \subfile{./sections/section_0.tex}
 	\section{Tổng quan}
 	\subfile{./sections/section_1.tex}
+	\clearpage
 	
 	\section{Sơ đồ ca sử dụng}
 	\subfile{./sections/section_2.tex}
+	\clearpage
 	
 	\section{Đặc tả ca sử dụng}
 	\subfile{./sections/section_3.tex}
+	\clearpage
 	
-	
-	%	\nocite{*}
-	%	\printbibliography[heading=bibintoc, title=Tài liệu tham khảo]
-	%	\printindex
+	\clearpage
+	\glsaddall
+	\printglossary[title={Giải thích thuật ngữ}]
+
 	
 \end{document}
 

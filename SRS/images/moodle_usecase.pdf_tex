@@ -1,0 +1,354 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'moodle_usecase.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1091.02028478bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.0586421)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{moodle_usecase.pdf}}%
+    \put(0.01935313,0.80498045){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Giảng viên\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{moodle_usecase.pdf}}%
+    \put(0.04753776,0.30728118){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản trị viên\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{moodle_usecase.pdf}}%
+    \put(0.5125841,1.04626836){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Moodle plus plus\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{moodle_usecase.pdf}}%
+    \put(0.72878082,0.18354379){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Đăng nhập \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{moodle_usecase.pdf}}%
+    \put(0.60091885,0.1608586){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tương tác\end{tabular}}}}%
+    \put(0.60091885,0.15123459){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}người dùng khác \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{moodle_usecase.pdf}}%
+    \put(0.77071404,0.1216751){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý\end{tabular}}}}%
+    \put(0.77071404,0.11205108){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}thông tin cá nhân\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{moodle_usecase.pdf}}%
+    \put(0.84495648,0.7554855){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tham gia \end{tabular}}}}%
+    \put(0.84495648,0.74586148){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}lớp học\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{moodle_usecase.pdf}}%
+    \put(0.78996208,0.71217741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tìm kiếm\end{tabular}}}}%
+    \put(0.78996208,0.70255339){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}lớp học \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{moodle_usecase.pdf}}%
+    \put(0.67859843,0.63862241){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Kiểm tra\end{tabular}}}}%
+    \put(0.67859843,0.62899839){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}trực tuyến\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{moodle_usecase.pdf}}%
+    \put(0.73496769,0.40695852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Phản hồi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{moodle_usecase.pdf}}%
+    \put(0.15065225,0.59875147){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý\end{tabular}}}}%
+    \put(0.15065225,0.58912745){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}nội dung lớp học \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{moodle_usecase.pdf}}%
+    \put(0.2138958,0.86272456){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý \end{tabular}}}}%
+    \put(0.2138958,0.85310055){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}hoạt động\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{moodle_usecase.pdf}}%
+    \put(0.29020052,0.70805283){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý\end{tabular}}}}%
+    \put(0.29020052,0.69842881){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}bài tập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{moodle_usecase.pdf}}%
+    \put(0.19396033,1.00021055){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý\end{tabular}}}}%
+    \put(0.19396033,0.99058653){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}diễn đàn\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{moodle_usecase.pdf}}%
+    \put(0.54179988,0.47638894){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tải xuống\end{tabular}}}}%
+    \put(0.54179988,0.46676492){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}tài liệu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{moodle_usecase.pdf}}%
+    \put(0.69372189,0.58225315){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nộp bài tập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{moodle_usecase.pdf}}%
+    \put(0.65591325,0.76167236){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem\end{tabular}}}}%
+    \put(0.65591325,0.75204835){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}thông tin lớp\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{moodle_usecase.pdf}}%
+    \put(0.51499011,0.71973914){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem\end{tabular}}}}%
+    \put(0.51499011,0.71011512){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}thành viên \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{moodle_usecase.pdf}}%
+    \put(0.55004904,0.53619535){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem danh sách \end{tabular}}}}%
+    \put(0.55004904,0.52657133){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}bài tập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{moodle_usecase.pdf}}%
+    \put(0.5699845,0.41177053){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cập nhật \end{tabular}}}}%
+    \put(0.5699845,0.40214651){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}quá trình học\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{moodle_usecase.pdf}}%
+    \put(0.52805128,0.65237101){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Đăng thảo luận\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{moodle_usecase.pdf}}%
+    \put(0.66691212,0.69705395){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tham gia \end{tabular}}}}%
+    \put(0.66691212,0.68742993){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}thảo luận\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{moodle_usecase.pdf}}%
+    \put(0.42837394,0.41864483){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tải nội dung\end{tabular}}}}%
+    \put(0.42837394,0.40902081){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}lớp\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{moodle_usecase.pdf}}%
+    \put(0.66691212,0.83522737){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tham gia lớp học\end{tabular}}}}%
+    \put(0.66691212,0.82560335){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}trực tuyến\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{moodle_usecase.pdf}}%
+    \put(0.87657825,0.15604659){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem thông báo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{moodle_usecase.pdf}}%
+    \put(0.80233582,0.21104099){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cập nhật\end{tabular}}}}%
+    \put(0.80233582,0.20141697){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}thông tin\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{moodle_usecase.pdf}}%
+    \put(0.48680548,0.1354237){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Khám phá\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{moodle_usecase.pdf}}%
+    \put(0.67859843,0.22410216){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nhắn tin\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{moodle_usecase.pdf}}%
+    \put(0.58304567,0.23853819){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Đăng blog\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{moodle_usecase.pdf}}%
+    \put(0.37337954,0.18354379){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem trạng thái\end{tabular}}}}%
+    \put(0.37337954,0.17391977){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}bạn bè \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{moodle_usecase.pdf}}%
+    \put(0.41943735,0.23853819){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tìm người dùng \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{moodle_usecase.pdf}}%
+    \put(0.49917922,0.22891417){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tìm lớp \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{moodle_usecase.pdf}}%
+    \put(0.4091259,0.77817068){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Giao bài tập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{moodle_usecase.pdf}}%
+    \put(0.42424936,0.72936316){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Chấm bài tập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{moodle_usecase.pdf}}%
+    \put(0.4160002,0.68468021){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tổng hợp\end{tabular}}}}%
+    \put(0.4160002,0.67505619){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}kết quả \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{moodle_usecase.pdf}}%
+    \put(0.34519492,1.04076892){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tạo chủ đề\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{moodle_usecase.pdf}}%
+    \put(0.35688122,0.99539854){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Trả lời câu hỏi \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{moodle_usecase.pdf}}%
+    \put(0.36444295,0.95690247){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ghim\end{tabular}}}}%
+    \put(0.36444295,0.94727845){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}câu trả lời\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{moodle_usecase.pdf}}%
+    \put(0.30601141,0.78916956){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cấp phép\end{tabular}}}}%
+    \put(0.30601141,0.77954554){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}truy cập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{moodle_usecase.pdf}}%
+    \put(0.35000693,0.85310055){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cấp phù hiệu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{moodle_usecase.pdf}}%
+    \put(0.35000693,0.90328293){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Thay đổi\end{tabular}}}}%
+    \put(0.35000693,0.89365891){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}sinh viên\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{moodle_usecase.pdf}}%
+    \put(0.30944856,0.57400399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tạo bài giảng\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{moodle_usecase.pdf}}%
+    \put(0.31357314,0.50388614){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tải lên tài liệu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{moodle_usecase.pdf}}%
+    \put(0.30944856,0.64343442){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tạo câu hỏi\end{tabular}}}}%
+    \put(0.30944856,0.6338104){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quiz \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{moodle_usecase.pdf}}%
+    \put(0.1589014,0.39595964){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý \end{tabular}}}}%
+    \put(0.1589014,0.38633562){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}danh sách\end{tabular}}}}%
+    \put(0.1589014,0.3767116){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c} khóa học\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{moodle_usecase.pdf}}%
+    \put(0.16921285,0.24884964){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý\end{tabular}}}}%
+    \put(0.16921285,0.23922562){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}tài khoản\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{moodle_usecase.pdf}}%
+    \put(0.30188683,0.3031566){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cấp mới\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{moodle_usecase.pdf}}%
+    \put(0.31357314,0.2433502){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Thay đổi\end{tabular}}}}%
+    \put(0.31357314,0.23372618){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}thông tin \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{moodle_usecase.pdf}}%
+    \put(0.29913711,0.17873178){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Lấy danh sách\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{moodle_usecase.pdf}}%
+    \put(0.29913711,0.43445572){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Lấy kết quả\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{moodle_usecase.pdf}}%
+    \put(0.29501253,0.37052473){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Thay đổi\end{tabular}}}}%
+    \put(0.29501253,0.36090071){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}lớp học\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{moodle_usecase.pdf}}%
+    \put(0.23403063,0.21179715){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{moodle_usecase.pdf}}%
+    \put(0.24135863,0.24163162){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{moodle_usecase.pdf}}%
+    \put(0.23563921,0.27398211){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{moodle_usecase.pdf}}%
+    \put(0.22717695,0.37633352){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{moodle_usecase.pdf}}%
+    \put(0.22931485,0.41084252){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{moodle_usecase.pdf}}%
+    \put(0.30944856,0.60665691){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{moodle_usecase.pdf}}%
+    \put(0.31151085,0.53932314){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{moodle_usecase.pdf}}%
+    \put(0.49295799,0.18223078){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{moodle_usecase.pdf}}%
+    \put(0.45300456,0.18749651){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{moodle_usecase.pdf}}%
+    \put(0.43040875,0.15729768){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{moodle_usecase.pdf}}%
+    \put(0.62161047,0.55706571){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{moodle_usecase.pdf}}%
+    \put(0.48538938,0.44319981){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{moodle_usecase.pdf}}%
+    \put(0.27942163,0.97403322){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{moodle_usecase.pdf}}%
+    \put(0.27576449,0.99574226){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{moodle_usecase.pdf}}%
+    \put(0.26952264,1.0184137){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=67]{moodle_usecase.pdf}}%
+    \put(0.35284601,0.69194635){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=68]{moodle_usecase.pdf}}%
+    \put(0.35750677,0.71670069){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=69]{moodle_usecase.pdf}}%
+    \put(0.34982819,0.74115258){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=70]{moodle_usecase.pdf}}%
+    \put(0.28192386,0.85585027){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=71]{moodle_usecase.pdf}}%
+    \put(0.23033913,0.61305689){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=72]{moodle_usecase.pdf}}%
+    \put(0.26011858,0.82134127){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=73]{moodle_usecase.pdf}}%
+    \put(0.23207833,0.54927716){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=74]{moodle_usecase.pdf}}%
+    \put(0.22980294,0.58226691){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=75]{moodle_usecase.pdf}}%
+    \put(0.63293935,0.51521497){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=76]{moodle_usecase.pdf}}%
+    \put(0.72313016,0.73238785){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=77]{moodle_usecase.pdf}}%
+    \put(0.75597559,0.79086751){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=78]{moodle_usecase.pdf}}%
+    \put(0.8233574,0.13668854){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=79]{moodle_usecase.pdf}}%
+    \put(0.78658678,0.16206161){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=80]{moodle_usecase.pdf}}%
+    \put(0.63988237,0.19052122){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=81]{moodle_usecase.pdf}}%
+    \put(0.5919685,0.19768419){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=82]{moodle_usecase.pdf}}%
+    \put(0.61879203,0.36571272){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem điểm số\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=83]{moodle_usecase.pdf}}%
+    \put(0.59779105,0.67273956){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=84]{moodle_usecase.pdf}}%
+    \put(0.80233582,0.93146756){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Xem giới thiệu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=85]{moodle_usecase.pdf}}%
+    \put(0.71571965,0.50319871){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Khám phá\end{tabular}}}}%
+    \put(0.71571965,0.49357469){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}lớp học\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=86]{moodle_usecase.pdf}}%
+    \put(0.62843669,0.48527741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=87]{moodle_usecase.pdf}}%
+    \put(0.64314079,0.45320194){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=88]{moodle_usecase.pdf}}%
+    \put(0.66715271,0.43224905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=89]{moodle_usecase.pdf}}%
+    \put(0.58558917,0.7362787){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=90]{moodle_usecase.pdf}}%
+    \put(0.20220949,0.93421728){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Quản lý\end{tabular}}}}%
+    \put(0.20220949,0.92459326){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}danh sách\end{tabular}}}}%
+    \put(0.20220949,0.91496924){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}sinh viên \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=91]{moodle_usecase.pdf}}%
+    \put(0.27641756,0.91182081){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=92]{moodle_usecase.pdf}}%
+    \put(0.22015828,0.64872764){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=93]{moodle_usecase.pdf}}%
+    \put(0.59129483,0.01031145){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Người dùng\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=94]{moodle_usecase.pdf}}%
+    \put(0.97281844,0.47570151){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sinh viên\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=95]{moodle_usecase.pdf}}%
+    \put(0.97281844,0.81597933){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Khách truy cập\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=96]{moodle_usecase.pdf}}%
+    \put(0.23403063,0.21179715){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=97]{moodle_usecase.pdf}}%
+    \put(0.24135863,0.24163162){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=98]{moodle_usecase.pdf}}%
+    \put(0.23563921,0.27398211){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=99]{moodle_usecase.pdf}}%
+    \put(0.22717695,0.37633352){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=100]{moodle_usecase.pdf}}%
+    \put(0.22931485,0.41084252){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=101]{moodle_usecase.pdf}}%
+    \put(0.30944856,0.60665691){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=102]{moodle_usecase.pdf}}%
+    \put(0.31151085,0.53932314){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=103]{moodle_usecase.pdf}}%
+    \put(0.49295799,0.18223078){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=104]{moodle_usecase.pdf}}%
+    \put(0.45300456,0.18749651){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=105]{moodle_usecase.pdf}}%
+    \put(0.43040875,0.15729768){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=106]{moodle_usecase.pdf}}%
+    \put(0.62161047,0.55706571){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=107]{moodle_usecase.pdf}}%
+    \put(0.48538938,0.44319981){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=108]{moodle_usecase.pdf}}%
+    \put(0.27942163,0.97403322){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=109]{moodle_usecase.pdf}}%
+    \put(0.27576449,0.99574226){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=110]{moodle_usecase.pdf}}%
+    \put(0.26952264,1.0184137){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=111]{moodle_usecase.pdf}}%
+    \put(0.35284601,0.69194635){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=112]{moodle_usecase.pdf}}%
+    \put(0.35750677,0.71670069){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=113]{moodle_usecase.pdf}}%
+    \put(0.34982819,0.74115258){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=114]{moodle_usecase.pdf}}%
+    \put(0.28192386,0.85585027){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=115]{moodle_usecase.pdf}}%
+    \put(0.23033913,0.61305689){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=116]{moodle_usecase.pdf}}%
+    \put(0.26011858,0.82134127){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=117]{moodle_usecase.pdf}}%
+    \put(0.23207833,0.54927716){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=118]{moodle_usecase.pdf}}%
+    \put(0.22980294,0.58226691){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=119]{moodle_usecase.pdf}}%
+    \put(0.63293935,0.51521497){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=120]{moodle_usecase.pdf}}%
+    \put(0.72313016,0.73238785){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=121]{moodle_usecase.pdf}}%
+    \put(0.75597559,0.79086751){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Extend>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=122]{moodle_usecase.pdf}}%
+    \put(0.8233574,0.13668854){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=123]{moodle_usecase.pdf}}%
+    \put(0.78658678,0.16206161){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=124]{moodle_usecase.pdf}}%
+    \put(0.63988237,0.19052122){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=125]{moodle_usecase.pdf}}%
+    \put(0.5919685,0.19768419){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=126]{moodle_usecase.pdf}}%
+    \put(0.59779105,0.67273956){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=127]{moodle_usecase.pdf}}%
+    \put(0.62843669,0.48527741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=128]{moodle_usecase.pdf}}%
+    \put(0.64314079,0.45320194){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=129]{moodle_usecase.pdf}}%
+    \put(0.66715271,0.43224905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=130]{moodle_usecase.pdf}}%
+    \put(0.58558917,0.7362787){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=131]{moodle_usecase.pdf}}%
+    \put(0.27641756,0.91182081){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=132]{moodle_usecase.pdf}}%
+    \put(0.22015828,0.64872764){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}<<Include>>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=133]{moodle_usecase.pdf}}%
+  \end{picture}%
+\endgroup%
