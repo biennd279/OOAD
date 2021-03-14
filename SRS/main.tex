@@ -25,6 +25,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{placeins}
+\usepackage{array}
+
 
 \let\orgautoref\autoref
 \providecommand{\Autoref}[1]
@@ -41,10 +43,13 @@
 	\orgautoref{#1}
 }
 
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
 % \newcommand{\iindex}[1]{\textit{#1}\index{#1}}
 
 % Create file reference.bib to add 
-%\addbibresource{./reference.bib}
+\addbibresource{./reference.bib}
 %\makeindex[intoc]
 %\makeglossaries
 %\loadglsentries{glossary}
@@ -83,10 +88,16 @@
 	% \begin{document}
 	% \end{document}
 	
-	\section{Section}
-	\subfile{./sections/section_0.tex}
+	% \section{Section}
+	% \subfile{./sections/section_0.tex}
+	\section{Tổng quan}
+	\subfile{./sections/section_1.tex}
 	
+	\section{Sơ đồ ca sử dụng}
+	\subfile{./sections/section_2.tex}
 	
+	\section{Đặc tả ca sử dụng}
+	\subfile{./sections/section_3.tex}
 	
 	
 	%	\nocite{*}
