@@ -1,0 +1,43 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	\subsection{Giới thiệu}
+	
+	Tài liệu được viết dựa theo định dạng báo cáo \textit{"IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications"}.
+	
+	
+	Mục đích của Phân tích ca sử dụng là tách biệt mối quan tâm của các nhà đầu cơ của hệ thống (như được mô tả bởi mô hình Ca sử dụng và các yêu cầu của hệ thống) khỏi các mối quan tâm của các nhà thiết kế hệ thống. Việc thực hiện Ca sử dụng cung cấp một cấu trúc trong mô hình thiết kế, tổ chức các tạo tác liên quan đến Ca sử dụng nhưng thuộc về mô hình thiết kế. Các tạo phẩm liên quan này thường bao gồm các sơ đồ cộng tác và trình tự thể hiện hành vi của Ca sử dụng theo các đối tượng cộng tác.
+	
+	
+	Chủ đề nhóm chọn là “Hệ thống hỗ trợ giảng dạy trực tuyến”.
+	
+	
+	Tài liệu này gồm 3 phần chính: 
+	\begin{description}
+		\item [Sơ đồ tương tác ca sử dụng] Một tương tác ca sử dụng thể hiện cách thức ca sử dụng sẽ được thực hiện thông qua các đối tượng cộng tác (collaboration objects). Có nhiều hình thức khác nhau để thể hiện tương tác giữa các đối tượng trong ca sử dụng. Ví dụ, nó có thể bao gồm một mô tả văn bản (tài liệu), sơ đồ lớp của các lớp và hệ thống con tham gia và sơ đồ tương tác (sơ đồ truyền thông và trình tự) minh họa luồng tương tác giữa các thể hiện của lớp và hệ thống con.
+		\item [Các mục tiêu và ràng buộc kiến trúc] Khung nhìn các kịch bản của các lớp tham gia trong hệ thống nhanh chóng tạo ra sơ đồ lớp (class diagram), trong đó hiển thị các lớp trong một gói hoặc các lớp có sự cộng tác trong quá trình thực thi ca sử dụng. Trong trường hợp sau, các kịch bản sau đó thêm các liên kết đơn hướng giữa các lớp cộng tác, nếu chúng chưa tồn tại và đánh dấu chúng là các lớp được tạo ra.
+		\item [Ánh xạ cơ chế phân tích từ lớp phân tích] Khi các lớp phân tích được xác định, điều quan trọng là xác định các cơ chế phân tích áp dụng cho các lớp được xác định.
+	\end{description}
+	\subsection{Đối tượng dự kiến}
+	\textbf{Vai trò người thiết kế}: Vai trò của người thiết kế xác định trách nhiệm, hoạt động, thuộc tính và mối quan hệ của một hoặc một số lớp và xác định cách chúng sẽ được điều chỉnh theo môi trường thực hiện. Ngoài ra, vai trò của nhà thiết kế có thể chịu trách nhiệm đối với một hoặc nhiều gói thiết kế hoặc các hệ thống con thiết kế, bao gồm mọi lớp thuộc sở hữu của các gói hoặc hệ thống con.
+	Các đối tượng mà báo cáo này hướng đến bao gồm: 
+	
+	\begin{description}
+		\item [Nhà phát triển] Người thực hiện nhiệm vụ phát triển hệ thống từ đầu vào là bản thiết kế và tài liệu để tạo thành đầu ra là một phiên bản có thể chạy được.
+		\item [Khách hàng] Khách hàng là người đặt hàng hệ thống và muốn có một hệ thống mới (system-to-be) tốt hơn hệ thống hiện thời (system-as-is). Trong khóa học này, khách hàng có thể coi như là giáo viên.
+		\item [Người viết tài liệu] Người sẽ viết tài liệu trong tương lai (các báo cáo, biên bản).
+	\end{description}
+
+	\subsection{Phạm vi dự án}
+	Hệ thống hỗ trợ giảng dạy và học tập trực tuyến được xây dựng như một phương tiện hỗ trợ học tập và giảng dạy cho giảng viên và sinh viên.
+	
+	
+	Hệ thống sẽ được phát triển dưới dạng ứng dụng Web và ứng dụng Mobile. Người dùng cuối sẽ cần mạng Internet và một thiết bị thông minh để có thể truy cập và sử dụng hệ thống. 
+	
+
+	
+	\subsection{Tài liệu tham khảo}
+	\nocite{*}
+	\printbibliography[heading=none]
+	
+\end{document}
