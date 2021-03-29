@@ -1,0 +1,45 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	\subsection{Mục đích}
+	
+	Đây là một báo cáo về chủ đề Phân tích và thiết kế hướng đối tượng của nhóm 6 về lựa chọn chủ đề giải quyết vấn đề.
+	Các yêu cầu về chức năng và phi chức năng của hệ thống đã được phân tích và tất cả các vấn đề và sự mơ hồ đã được giải quyết. Tài liệu này được xem xét bởi quản lý và tiếp thị dự án.
+	
+	
+	Tài liệu sẽ ưu tiên phân tích các yêu cầu ở mức trung bình và cao, các yêu cầu mức ưu tiên thấp và một số yêu cầu đơn giản khác sẽ không được phân tích trong phần sau của tài liệu.
+	\subsection{Đối tượng dự kiến và cách đọc }
+	Các đối tượng mà báo cáo này hướng đến bao gồm: 
+	\begin{description}
+		\item[Nhà phát triển] Người thực hiện nhiệm vụ phát triển hệ thống từ đầu vào là bản thiết kế và tài liệu để tạo thành đầu ra là một phiên bản có thể chạy được.
+		\item[Khách hàng] Khách hàng là người đặt hàng hệ thống và muốn có một hệ thống mới (system-to-be) tốt hơn hệ thống hiện thời (system-as-is). Trong khóa học này, khách hàng có thể coi như là giáo viên.
+		\item[Người viết tài liệu] Người sẽ viết tài liệu trong tương lai (các báo cáo, biên bản).
+	\end{description}
+	Tài liệu cung cấp một mô tả tổng quan về các mục tiêu của kiến trúc, các ca sử dụng hỗ trợ bởi hệ thống và các kiểu và thành phần kiến trúc đã được chọn để đạt được các ca sử dụng phù hợp nhất. Khung làm việc này sau đó cho phép phát triển các tiêu chí thiết kế và tài liệu xác định các tiêu chuẩn kỹ thuật và miền một cách chi tiết.
+		
+		
+	Tài liệu này giúp người đọc có được cái nhìn tổng quan về kiến trúc hệ thống. Các nội dung chính trong báo cáo bao gồm: xác định các cơ chế phân tích, các trừu tượng chính, và các phần kiến trúc chính: 
+	\begin{description}
+		\item[Biểu diễn kiến trúc] Phần này mô tả kiến trúc phần mềm nào cho hệ thống hiện tại và cách nó được trình bày. Bao gồm ca sử dụng, khung nhìn logic, khung nhìn tiến trình, khung nhìn triển khai và khung nhìn thực thi nó liệt kê các khung nhìn cần thiết và cho mỗi khung nhìn, giải thích các loại phần tử mô hình mà nó chứa.
+		\item[Các mục tiêu và ràng buộc về kiến trúc] Phần này mô tả các yêu cầu và mục tiêu phần mềm có ảnh hưởng đáng kể đến kiến trúc, ví dụ: an toàn, bảo mật, quyền riêng tư, sử dụng sản phẩm có sẵn, tính di động, phân phối và tái sử dụng. Nó cũng nắm bắt các ràng buộc đặc biệt có thể áp dụng: chiến lược thiết kế và triển khai, các công cụ phát triển, cấu trúc nhóm, lịch biểu, mã kế thừa, v.v.
+		\item[Khung nhìn ca sử dụng] Phần này liệt kê các trường hợp sử dụng hoặc kịch bản từ mô hình ca sử dụng nếu chúng thể hiện một số chức năng trung tâm quan trọng của hệ thống cuối cùng hoặc nếu chúng có độ bao phủ kiến trúc lớn - chúng thực hiện nhiều yếu tố kiến trúc hoặc nếu chúng nhấn mạnh hoặc minh họa cụ thể, điểm tinh tế của kiến trúc.
+		\item[Khung nhìn logic] Phần này mô tả các phần có ý nghĩa về mặt kiến trúc của mô hình thiết kế, chẳng hạn như phân tách thành các hệ thống con và gói. Và đối với mỗi gói quan trọng, phân tách của nó thành các lớp và các tiện ích lớp. Bạn nên giới thiệu các lớp có ý nghĩa về mặt kiến trúc và mô tả trách nhiệm của họ, cũng như một vài mối quan hệ, hoạt động và thuộc tính rất quan trọng.
+		\item[Khung nhìn tiến trình] Phần này mô tả sự phân rã của hệ thống thành các quy trình nhẹ (các luồng điều khiển đơn) và các quy trình nặng (nhóm các quy trình nhẹ). Tổ chức các phần theo nhóm các tiến trình giao tiếp hoặc tương tác. Mô tả các chế độ giao tiếp chính giữa các tiến trình, chẳng hạn như chuyển tin nhắn, ngắt và điểm hẹn.
+		\item[Khung nhìn triển khai] Phần này mô tả một hoặc nhiều tiến trình cấu hình mạng vật lý (phần cứng) khi phần mềm được triển khai và chạy.
+		\item[Khung nhìn thực thi] Phần này mô tả cấu trúc tổng thể của mô hình triển khai, phân tách phần mềm thành các lớp và hệ thống con trong mô hình triển khai và bất kỳ thành phần quan trọng nào về mặt kiến trúc.
+		\item[Quy mô và hiệu năng] Mô tả về các đặc điểm kích thước chính của phần mềm tác động đến kiến trúc, cũng như các ràng buộc về hiệu suất.
+		\item[Chất lượng] Một mô tả về cách kiến trúc phần mềm thỏa mãn các yêu cầu khác (ngoài yêu cầu chức năng) của hệ thống: khả năng mở rộng, độ tin cậy, tính di động, v.v.
+	\end{description}
+		
+
+	\subsection{Phạm vi dự án}
+	Hệ thống hỗ trợ giảng dạy và học tập trực tuyến được xây dựng như một lớp học thực tế, tại đó có thể tạo ra đa dạng các khóa học, kết nối các giảng viên và sinh viên có nhu cầu tham gia giảng dạy và học tập.
+	
+	
+	Hệ thống sẽ được phát triển dưới dạng ứng dụng Web và ứng dụng Mobile. Người dùng cuối sẽ cần mạng Internet và một thiết bị thông minh để có thể truy cập và sử dụng hệ thống.
+	
+	\subsection{Tài liệu tham khảo}
+	\nocite{*}
+	\printbibliography[heading=none]
+	
+\end{document}

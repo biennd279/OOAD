@@ -130,6 +130,9 @@ acs-*.bib
 *.trc
 *.xref
 
+
+*.pdf_text
+
 # hyperref
 *.brf
 
