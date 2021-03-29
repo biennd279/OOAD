@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{797.95703125bp}%
+    \setlength{\unitlength}{742.078125bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,7 +50,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.55266134)%
+  \begin{picture}(1,0.8904049)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{3_3_1_Message.pdf}}%
