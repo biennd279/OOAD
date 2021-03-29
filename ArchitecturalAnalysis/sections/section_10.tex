@@ -1,0 +1,14 @@
+\documentclass[./../main_file.tex]{subfiles}
+\begin{document}
+	\subsection{Tổng quan}
+	Toàn bộ các lớp(layer) cài đặt trên máy chủ đề nằm trên một lớp duy nhất. Trình duyệt người chỉ cung cấp khả năng truy cập thứ cấp tới lớp thông qua kết nối Internet.
+	\subsection{Các lớp kiến trúc}
+	
+	\begin{description}
+		\item[Server Layer] Server layer hỗ trợ nhiều ứng dụng máy chủ khác nhau, bao gồm cả các trang web tĩnh. Máy chủ mạng sẽ biết tới trạng thái tồn tại của máy chủ. Thông thường máy chủ mạng sẽ quản lý máy chủ, tuy nhiên một số trường hợp chương trình ứng dụng sẽ đảm nhiệm một phần trách nhiệm này.
+		
+		\item[Client Layer] Lớp này là lớp mà người dùng truy cập ứng dụng. Server Layer tiếp nhận yêu cầu từ client layer thông qua Internet và chuyển các yêu cầu đến các tác nhân thích hợp. Máy chủ sẽ phản hồi lại các tác nhân trở lại  người dùng. Trong trường hợp này, người dùng sẽ chỉ là trình duyệt. 
+		
+	\end{description}
+	
+\end{document}
