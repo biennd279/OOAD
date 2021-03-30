@@ -1,0 +1,184 @@
+%% Creator: Inkscape 1.0.2 (1.0.2+r75+1), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'domain_package_course.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{849bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.63515901)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{domain_package_course.pdf}}%
+    \put(0.22968198,0.34010601){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.22968198,0.32773852){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-teacher : TeacherAccount\end{tabular}}}}%
+    \put(0.22968198,0.31537102){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-name\end{tabular}}}}%
+    \put(0.22968198,0.30300353){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.22968198,0.29063604){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-school\end{tabular}}}}%
+    \put(0.22968198,0.27826855){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-contents : CourseContent[]\end{tabular}}}}%
+    \put(0.22968198,0.26590106){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-assignments : Assignments[]\end{tabular}}}}%
+    \put(0.22968198,0.25353357){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-members : Student[]\end{tabular}}}}%
+    \put(0.22968198,0.24116608){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-forum : Forum[]\end{tabular}}}}%
+    \put(0.22968198,0.22879859){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-quizzes : Quiz[]\end{tabular}}}}%
+    \put(0.31272085,0.35424028){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Course}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{domain_package_course.pdf}}%
+    \put(0.22968198,0.55123675){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.22968198,0.53886926){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-questions : QuizQuestion[]\end{tabular}}}}%
+    \put(0.22968198,0.52650177){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-timeLimit\end{tabular}}}}%
+    \put(0.22968198,0.51413428){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongToCourse : Course\end{tabular}}}}%
+    \put(0.22968198,0.50176678){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-closedAt\end{tabular}}}}%
+    \put(0.22968198,0.48939929){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.22968198,0.4770318){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-isHidden : boolean\end{tabular}}}}%
+    \put(0.22968198,0.46466431){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-totalScore\end{tabular}}}}%
+    \put(0.28533569,0.56537102){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Quiz}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{domain_package_course.pdf}}%
+    \put(0.46024735,0.60954064){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.46024735,0.59717314){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-question : String\end{tabular}}}}%
+    \put(0.46024735,0.58480565){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-answer : String\end{tabular}}}}%
+    \put(0.46024735,0.57243816){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-questionType\end{tabular}}}}%
+    \put(0.46024735,0.56007067){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-attachment\end{tabular}}}}%
+    \put(0.46024735,0.54770318){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongToQuiz : Quiz\end{tabular}}}}%
+    \put(0.47614841,0.62367491){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{QuizQuestion}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{domain_package_course.pdf}}%
+    \put(0.52385159,0.25971731){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.52385159,0.24734982){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-content : String\end{tabular}}}}%
+    \put(0.52385159,0.23498233){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-attachment\end{tabular}}}}%
+    \put(0.52385159,0.22261484){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-totalScore\end{tabular}}}}%
+    \put(0.52385159,0.21024735){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-deadline : DateTime\end{tabular}}}}%
+    \put(0.52385159,0.19787986){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-comments : AssignmentComment[]\end{tabular}}}}%
+    \put(0.52385159,0.18551237){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.52385159,0.17314488){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-isHidden : boolean\end{tabular}}}}%
+    \put(0.52385159,0.16077739){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-submissions : Submission[]\end{tabular}}}}%
+    \put(0.52385159,0.14840989){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongToCourse : Course\end{tabular}}}}%
+    \put(0.58038869,0.27385159){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Assignment}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{domain_package_course.pdf}}%
+    \put(0.81978799,0.23498233){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.81978799,0.22261484){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-attachment\end{tabular}}}}%
+    \put(0.81978799,0.21024735){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.81978799,0.19787986){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-lastUpdatedAt : DateTime\end{tabular}}}}%
+    \put(0.81978799,0.18551237){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdBy : StudentAccount\end{tabular}}}}%
+    \put(0.81978799,0.17314488){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-score : int\end{tabular}}}}%
+    \put(0.81978799,0.16077739){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongTo : Assignment\end{tabular}}}}%
+    \put(0.8754417,0.24911661){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Submission}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{domain_package_course.pdf}}%
+    \put(0.01855124,0.22968198){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.01855124,0.21731449){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongToCourse : Course\end{tabular}}}}%
+    \put(0.01855124,0.204947){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-posts : Post[]\end{tabular}}}}%
+    \put(0.01855124,0.19257951){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-isHidden : boolean\end{tabular}}}}%
+    \put(0.06537102,0.24381625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Forum}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{domain_package_course.pdf}}%
+    \put(0.02473498,0.10689046){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.02473498,0.09452297){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-content : String\end{tabular}}}}%
+    \put(0.02473498,0.08215548){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-attachment\end{tabular}}}}%
+    \put(0.02473498,0.06978799){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdBy : Account\end{tabular}}}}%
+    \put(0.02473498,0.05742049){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.02473498,0.045053){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-updatedAt\end{tabular}}}}%
+    \put(0.02473498,0.03268551){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-comments : Comment[]\end{tabular}}}}%
+    \put(0.07332155,0.12102473){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Post}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{domain_package_course.pdf}}%
+    \put(0.59717314,0.43639576){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.59717314,0.42402827){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-owner : StudentAccount\end{tabular}}}}%
+    \put(0.59717314,0.41166078){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-source : ScoreGiver\end{tabular}}}}%
+    \put(0.59717314,0.39929329){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-score : int\end{tabular}}}}%
+    \put(0.59717314,0.3869258){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.59717314,0.3745583){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-updatedAt : DateTime\end{tabular}}}}%
+    \put(0.64399293,0.45053004){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Score}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{domain_package_course.pdf}}%
+    \put(0.44699647,0.40636042){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+getScore()\end{tabular}}}}%
+    \put(0.44964664,0.43374558){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}<<Interface>>\end{tabular}}}}%
+    \put(0.45848057,0.42137809){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{ScoreGiver}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{domain_package_course.pdf}}%
+    \put(0.00353357,0.40724382){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.00353357,0.39487633){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-content : String\end{tabular}}}}%
+    \put(0.00353357,0.38250883){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongTo : Course\end{tabular}}}}%
+    \put(0.00353357,0.37014134){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdBy : StudentAccount\end{tabular}}}}%
+    \put(0.00353357,0.35777385){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-isAnonymous : boolean\end{tabular}}}}%
+    \put(0.00353357,0.34540636){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.02915194,0.42137809){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{CourseFeedback}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{domain_package_course.pdf}}%
+    \put(0.24823322,0.09717314){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.24823322,0.08480565){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-belongTo : Course\end{tabular}}}}%
+    \put(0.24823322,0.07243816){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-startedAt : DateTime\end{tabular}}}}%
+    \put(0.24823322,0.06007067){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-closedAt : DateTime\end{tabular}}}}%
+    \put(0.24823322,0.04770318){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-scheduledAt : DateTime\end{tabular}}}}%
+    \put(0.24823322,0.03533569){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdBy : TeacherAccount\end{tabular}}}}%
+    \put(0.24823322,0.0229682){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-participants : StudentAccount[]\end{tabular}}}}%
+    \put(0.30918728,0.11130742){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Lesson}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{domain_package_course.pdf}}%
+    \put(0.52031802,0.08392226){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-id\end{tabular}}}}%
+    \put(0.52031802,0.07155477){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-content : String\end{tabular}}}}%
+    \put(0.52031802,0.05918728){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-attachment\end{tabular}}}}%
+    \put(0.52031802,0.04681979){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-uploadedBy : TeacherAccount\end{tabular}}}}%
+    \put(0.52031802,0.0344523){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-createdAt : DateTime\end{tabular}}}}%
+    \put(0.52031802,0.02208481){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-updatedAt : DateTime\end{tabular}}}}%
+    \put(0.52031802,0.00971731){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-isHidden : boolean\end{tabular}}}}%
+    \put(0.55477032,0.09805654){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{CourseContent}\end{tabular}}}}%
+    \put(0.44434629,0.22968198){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.49028269,0.2164311){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.71908127,0.22614841){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.78710247,0.21113074){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.21201413,0.21378092){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.1590106,0.2270318){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.37720848,0.57773852){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.42756184,0.56448763){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1..*\end{tabular}}}}%
+    \put(0.54063604,0.41696113){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.56360424,0.40371025){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.08568905,0.17137809){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.05123675,0.13780919){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.21201413,0.35335689){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.1590106,0.36660777){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.44434629,0.17491166){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.49204947,0.09717314){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.2729682,0.36660777){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.29858657,0.43374558){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0.34187279,0.15812721){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.30742049,0.12809187){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0..*\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{domain_package_course.pdf}}%
+    \put(0.76855124,0.0114841){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Powered ByVisual Paradigm Community Edition\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{domain_package_course.pdf}}%
+  \end{picture}%
+\endgroup%

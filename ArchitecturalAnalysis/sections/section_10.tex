@@ -3,7 +3,11 @@
 	\subsection{Tổng quan}
 	Toàn bộ các lớp(layer) cài đặt trên máy chủ đề nằm trên một lớp duy nhất. Trình duyệt người chỉ cung cấp khả năng truy cập thứ cấp tới lớp thông qua kết nối Internet.
 	\subsection{Các lớp kiến trúc}
-	
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.8\textwidth}{!}{\input{./images/ImplementationView.pdf_tex}}
+		\caption{Mô hình khung nhìn cài đặt}
+	\end{figure}
 	\begin{description}
 		\item[Server Layer] Server layer hỗ trợ nhiều ứng dụng máy chủ khác nhau, bao gồm cả các trang web tĩnh. Máy chủ mạng sẽ biết tới trạng thái tồn tại của máy chủ. Thông thường máy chủ mạng sẽ quản lý máy chủ, tuy nhiên một số trường hợp chương trình ứng dụng sẽ đảm nhiệm một phần trách nhiệm này.
 		
