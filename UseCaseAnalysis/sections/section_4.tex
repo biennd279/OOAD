@@ -1,5 +1,69 @@
 \documentclass[./../main_file.tex]{subfiles}
 
 \begin{document}
-	
+	\begin{longtable}{|p{.5\textwidth}|p{.5\textwidth}|}
+			\hline
+			\textbf{Lớp phân tích}                & \textbf{Cơ chế phân tích}                                     \\ \hline
+			\multicolumn{2}{|c|}{\textbf{Gói ứng dụng}}                                                           \\ \hline
+			AuthenticationController              & Nhất quán, Giao tiếp                                          \\ \hline
+			AccountController                     & Nhất quán, Giao tiếp                                          \\ \hline
+			ProfileController                     & Nhất quán, Giao tiếp                                          \\ \hline
+			MessageController                     & Nhất quán, Giao tiếp                                          \\ \hline
+			BlogController                        & Nhất quán, Giao tiếp                                          \\ \hline
+			CourseController                      & Nhất quán, Giao tiếp                                          \\ \hline
+			AssignmentController                  & Nhất quán, Giao tiếp                                          \\ \hline
+			QuizController                        & Nhất quán, Giao tiếp                                          \\ \hline
+			LessonController                      & Nhất quán, Giao tiếp                                          \\ \hline
+			CourseContentController               & Nhất quán, Giao tiếp                                          \\ \hline
+			ForumController                       & Nhất quán, Giao tiếp                                          \\ \hline
+			ScoreController                       & Nhất quán, Giao tiếp                                          \\ \hline
+			NotificationController                & Nhất quán, Giao tiếp                                          \\ \hline
+			FeedBackController                    & Nhất quán, Giao tiếp                                          \\ \hline
+			OnlineClassController                 & Nhất quán, Giao tiếp                                          \\ \hline
+			CommentController                     & Nhất quán, Giao tiếp                                          \\ \hline
+			SubmissionController                  & Nhất quán, Giao tiếp                                          \\ \hline
+			ParticipantController                 & Nhất quán, Giao tiếp                                          \\ \hline
+			\multicolumn{2}{|c|}{\textbf{Gói giao diện}}                                                          \\ \hline
+			LoginBoundary                         & Bảo mật                                                       \\ \hline
+			ManageProfileBoundary                 & Không                                                         \\ \hline
+			ChatBoxBoundary                       & Không                                                         \\ \hline
+			ChatListBoundary                      & Không                                                         \\ \hline
+			ManageBlogBoundary                    & Không                                                         \\ \hline
+			CourseBoundary                        & Không                                                         \\ \hline
+			CourseListBoundary                    & Không                                                         \\ \hline
+			CourseContentBoundary                 & Không                                                         \\ \hline
+			CourseQuizBoundary                    & Không                                                         \\ \hline
+			CourseQuizResultBoundary              & Không                                                         \\ \hline
+			LessonBoundary                        & Không                                                         \\ \hline
+			SearchBoundary                        & Không                                                         \\ \hline
+			ScoreBoundary                         & Không                                                         \\ \hline
+			PostBoundary                          & Không                                                         \\ \hline
+			ForumBoundary                         & Không                                                         \\ \hline
+			SubmissionBoundary                    & Không                                                         \\ \hline
+			NotificationBoundary                  & Không                                                         \\ \hline
+			\multicolumn{2}{|c|}{\textbf{Gói người dùng (User package)}}                                          \\ \hline
+			Account (Student, Teacher, Admin)     & Bảo mật, Phân quyền                                           \\ \hline
+			BaseProfile (Student, Teacher, Admin) & Bảo mật, Phân quyền                                           \\ \hline
+			\multicolumn{2}{|c|}{\textbf{Gói xã hội (Social package)}}                                            \\ \hline
+			Blog                                  & Nhất quán                                                     \\ \hline
+			Comment                               & Nhất quán                                                     \\ \hline
+			Message                               & Nhất quán, Bảo mật                                            \\ \hline
+			ChatBox                               & Nhất quán, Bảo mật                                            \\ \hline
+			\multicolumn{2}{|c|}{\textbf{Gói khóa học (Course package)}}                                          \\ \hline
+			Course                                & Nhất quán                                                     \\ \hline
+			Lesson                                & Nhất quán                                                     \\ \hline
+			Forum                                 & Nhất quản                                                     \\ \hline
+			Post                                  & Nhất quán                                                     \\ \hline
+			Quiz                                  & Nhất quán, Bảo mật                                            \\ \hline
+			QuizQuestion                          & Nhất quán, Bảo mật                                            \\ \hline
+			Score                                 & Nhất quán                                                     \\ \hline
+			Assignment                            & Nhất quán                                                     \\ \hline
+			CourseContent                         & Nhất quán                                                     \\ \hline
+			Submission                            & Nhất quán                                                     \\ \hline
+			\multicolumn{2}{|c|}{\textbf{Gói nhất quán}}                                                          \\ \hline
+			DB                                    & Nhất quán, Phát hiện/ Xử lý/ Báo cáo lỗi, Bảo mật và Phân tán \\ \hline
+			UserDB                                & Nhất quán, Phát hiện/ Xử lý/ Báo cáo lỗi, Bảo mật và Phân tán \\ \hline
+			SocialDB                              & Nhất quán, Phát hiện/ Xử lý/ Báo cáo lỗi, Bảo mật và Phân tán \\ \hline
+			CourseDB                              & Nhất quán, Phát hiện/ Xử lý/ Báo cáo lỗi, Bảo mật và Phân tán \\ \hline
+	\end{longtable}
 \end{document}
