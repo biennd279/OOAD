@@ -4,7 +4,7 @@
 	Đây là một mô tả logic về kiến trúc của hệ thống. Mô tả những lớp quan trọng và cách tổ chức những gói dịch vụ và hệ thống con, và cách tổ chức những hệ thống con này vào các lớp. Trong phần này cũng mô tả những ca sử dụng quan trọng nhất, ví dụ những khía cạnh linh hoạt của kiến trúc hệ thống. Biểu đồ lớp có thể được đưa vào để minh họa các mối quan hệ giữa kiến trúc quan trọng các lớp, hệ thống con, gói và lớp.
 	\begin{figure}[H]
 		\centering
-		\resizebox{0.8\textwidth}{!}{\input{./images/logic_view_package_diagram.pdf_tex}}
+		\includegraphics[width=\linewidth]{./images/logic_view_package_diagram.eps}
 		\caption{Biểu đồ các gói trong khung nhìn logic}
 	\end{figure}
 	Khung nhìn logic của Hệ thống giảng dạy và học trực tuyến Moodle Plus bao gồm 5 gói:
@@ -21,14 +21,14 @@
 	\paragraph{Mô tả ngắn gọn}
 	Gói này chứa các gói chứa các lớp để hỗ trợ về khóa học, tài khoản, xã hội. Gói miền bao gồm 3 gói con sau đây:
 	\begin{description}
-		\item[Gói khóa học (course package)] chứa ...
+		\item[Gói khóa học (course package)] chứa thông tin về khóa học, sinh viên và giảng viên trong khóa học.
 		\item[Gói người dùng (user package)] chứa tất cả các lớp xác thực người dùng, thông tin tài khoản và thông tin cá nhân người dùng
 		\item[Gói xã hội (social package)] chứa tất cả các phương thức giúp các user có thể giao tiếp được với nhau.
 	\end{description}
 	\paragraph{Biểu đồ} ~\\
 	\begin{figure}[htb]
 		\centering
-		\resizebox{0.5\textwidth}{!}{\input{./images/subpackageindomain.pdf_tex}}
+				\includegraphics[width=\linewidth]{./images/subpackageindomaindigram.eps}
 		\caption{Biểu đồ gói con trong miền}
 	\end{figure}
 
@@ -49,7 +49,7 @@
 	\paragraph{Gói Social}~\\
 	\begin{figure}[H]
 		\centering
-		\resizebox{0.7\textwidth}{!}{\input{./images/PackageSocial_LogicalView.pdf_tex}}
+				\includegraphics[width=\linewidth]{./images/PackageSocial_LogicalView.eps}
 		\caption{Biểu đồ gói con trong miền}
 	\end{figure}
 	
@@ -59,7 +59,7 @@
 	\paragraph{Biểu đồ} ~\\
 	\begin{figure}[H]
 		\centering
-		\resizebox{0.7\textwidth}{!}{\input{./images/PresentationPackage.pdf_tex}}
+				\includegraphics[width=\linewidth]{./images/PresentationPackage.eps}
 		\caption{Biểu đồ gói gói giao diện}
 	\end{figure}
 	\subsubsection{Gói ứng dụng}
@@ -68,7 +68,7 @@
 	\paragraph{Biểu đồ}~\\
 	\begin{figure}[H]
 		\centering
-		\resizebox{.9\textwidth}{!}{\input{./images/application_package.pdf_tex}}
+		\includegraphics[width=\linewidth]{./images/application_package.eps}
 		\caption{Biểu đồ gói gói giao diện}
 	\end{figure}
 	\subsection{Gói nhất quán}
@@ -77,7 +77,7 @@
 	\paragraph{Biểu đồ}~\\
 		\begin{figure}[H]
 		\centering
-		\resizebox{0.7\textwidth}{!}{\input{./images/logic_view_persistence_package.pdf_tex}}
+				\includegraphics[width=\linewidth]{./images/PackagePersistence_LogicalView.eps}
 		\caption{Biểu đồ gói nhất quán}
 	\end{figure}
 	\subsubsection{Gói dịch vụ}
