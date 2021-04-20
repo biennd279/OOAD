@@ -1,0 +1,124 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[T5]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{imakeidx}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage[unicode, bookmarksopenlevel=4]{hyperref}
+\usepackage{makeidx}
+\usepackage[style=alphabetic]{biblatex}
+\usepackage[acronym]{glossaries}
+\usepackage{glossaries}
+\usepackage{multicol}
+\usepackage{subfiles}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{array}
+\usepackage[inkscapearea=page]{svg}
+\usepackage{longtable}
+\usepackage{multirow}
+
+\let\orgautoref\autoref
+\providecommand{\Autoref}[1]
+{
+	\def\figureautorefname{Hình}
+	\def\tableautorefname{Bảng}
+	\orgautoref{#1}
+}
+
+\renewcommand{\autoref}[1]
+{
+	\def\figureautorefname{hình}
+	\def\tableautorefname{bảng}
+	\orgautoref{#1}
+}
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% \newcommand{\iindex}[1]{\textit{#1}\index{#1}}
+
+% Create file reference.bib to add 
+\addbibresource{./reference.bib}
+%\makeindex[intoc]
+\makeglossaries
+\loadglsentries{glossary}
+\graphicspath{ {./images/} {./../images}}
+\DeclareGraphicsExtensions{.png}
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
+
+\title{Identify Design Element}
+
+\begin{document}
+	
+	\subfile{cover.tex}
+	\clearpage
+	
+	\subfile{history.tex}
+	\clearpage
+	
+	\tableofcontents 
+	\clearpage
+	
+	
+	% \listoffigures
+	% \listoftables
+	
+	% \printglossary[type=\acronymtype, title=Thuật ngữ viết tắt]
+	% \clearpage
+	
+	%	\section{Section}
+	%	\subfile{./sections/section1.tex}
+	 
+	
+	% Sub file must require this
+	% \documentclass[./../main_file.tex]{subfiles}
+	
+	% \begin{document}
+	% \end{document}
+	
+	% \section{Section}
+	% \subfile{./sections/section_0.tex}
+	\section{Giới thiệu}
+	\subfile{./sections/section_1.tex}
+
+	
+	\section{Sơ đồ bối cảnh hệ thống con}
+	\subfile{./sections/section_2.tex}
+	
+	\section{Xác định các phần tử thiết kế}
+	\subfile{./sections/section_3.tex}
+	
+	\section{Đóng gói các phần tử thiết kế}
+	\subfile{./sections/section_4.tex}
+	
+	
+	\section{Các lớp kiến trúc và phụ thuộc}
+	\subfile{./sections/section_5.tex}
+	
+	
+	\section{Các gói và phụ thuộc}
+	\subfile{./sections/section_6.tex}
+	
+	
+	
+	\clearpage
+	\glsaddall
+	\printglossary[title={Giải thích thuật ngữ}]
+
+	
+\end{document}
+
