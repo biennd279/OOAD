@@ -87,10 +87,19 @@ Nhóm đã vận dụng và kết hợp hai phương pháp thiết kế Inside-o
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{./images/pv_login.png}
+	\includegraphics[width=\linewidth]{./images/pv_JoinOnlineLesson.eps}
 \end{figure}
 
 \subsubsection{Mô tả các phần tử tiến trình}
+\begin{itemize}
+	\item Tiến trình OnlineLessonApplication: Điều khiển các giao diện, biểu mẫu dành cho người dùng hệ thống để có thể thao tác, sử dụng các dịch vụ của hệ thống. Tiến trình này có một thể hiện của lớp CourseContentPage có nhiệm vụ giúp người dùng truy cập vào lớp học của trực tuyến thông qua các khóa học và LessonPage cung cấp giao diện người dùng sử dụng các thao tác trên hệ thống.
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	\item Tiến trình CourseProcess: quản lý và điều hướng người dùng tới ứng dụng lớp học trực tuyến.
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	\item Tiến trình LessonProcess: quản lý và thực hiện các thao tác của người dùng tới  hệ thống con OnlineLessonSystem.
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	
+\end{itemize}
 
 \subsection{Tìm kiếm và khám phá}
 
@@ -98,10 +107,17 @@ Nhóm đã vận dụng và kết hợp hai phương pháp thiết kế Inside-o
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{./images/pv_login.png}
+	\includegraphics[width=\linewidth]{./images/pv_SearchCourse.eps}
 \end{figure}
 
 \subsubsection{Mô tả các phần tử tiến trình}
+\begin{itemize}
+	\item Tiến trình CourseSearchApplication: Điều khiển các giao diện, biểu mẫu dành cho người dùng hệ thống để có thể thao tác, sử dụng các dịch vụ của hệ thống. Tiến trình này có một thể hiện của lớp SearchCousePage có nhiệm vụ giúp người sử dụng các thao tác tìm kiếm trên ứng dụng và CourseListPage cung cấp giao diện giúp người dùng sử dụng và lấy các thông tin về khóa học trong kết quả tìm kiếm.
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	\item Tiến trình CourseProcess: Quản lý quá trình thực hiện tìm kiếm trên hệ thống.
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	
+\end{itemize}
 
 \subsection{Thảo luận trực tuyến}
 
@@ -109,10 +125,18 @@ Nhóm đã vận dụng và kết hợp hai phương pháp thiết kế Inside-o
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{./images/pv_login.png}
+	\includegraphics[width=\linewidth]{./images/pv_ForumDiscussion.eps}
 \end{figure}
 
 \subsubsection{Mô tả các phần tử tiến trình}
+\begin{itemize}
+	\item Tiến trình ForumApplication: : Điều khiển các giao diện, biểu mẫu dành cho người dùng hệ thống để có thể thao tác, sử dụng các dịch vụ của hệ thống. Tiến trình này có một thể hiện của lớp TopicPage cung cấp giao diện về chủ đề đang thảo luận.
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	\item Tiến trình ForumControllerProcess: Quá trình thực hiện các thao tác trong chủ đề với hệ thống .
+	Mỗi thể hiện tiến trình này tương ứng với một người dùng.
+	\item Luồng CommentControllerThread thực hiện đóng gói, gửi và cập nhập các bình luận trong chủ đề một cách liên tục.
+	
+\end{itemize}
 
 \subsection{Thực hiện kiểm tra trực tuyến}
 
