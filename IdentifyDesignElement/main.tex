@@ -1,3 +1,4 @@
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
 \documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{vietnam}
 \usepackage[T5]{fontenc}
@@ -26,12 +27,14 @@
 \usepackage{subcaption}
 \usepackage{placeins}
 \usepackage{array}
-\usepackage{svg}
+\usepackage[inkscapearea=page]{svg}
 \usepackage[off]{svg-extract}
 \usepackage{longtable}
 \usepackage{multirow}
 
 \svgpath{{./images} {./../images}}
+
+\svgsetup{clean=true}
 
 \let\orgautoref\autoref
 \providecommand{\Autoref}[1]
