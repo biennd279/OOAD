@@ -1,0 +1,41 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+\subsection{Giới thiệu}
+
+Đây là một báo cáo về việc xác định các phần tử thiết kế của nhóm 6.
+Tài liệu này được dùng để phân tích tương tác của các lớp phân tích để xác định các phần tử thiết kế của hệ thống.
+
+\subsection{Đối tượng dự kiến và đề xuất cách đọc}
+
+\textbf{Vai trò kiến trúc sư phần mềm}: Kiến trúc sư phần mềm đóng vai trò lãnh đạo và điều phối các hoạt động kỹ thuật và tạo tác trong suốt dự án. Kiến trúc sư phần mềm thiết lập cấu trúc tổng thể cho từng khung nhìn kiến trúc: phân chia khung nhìn, nhóm các phần tử và tạo giao diện giữa các nhóm chính này. Do đó, khác với các vai trò khác, khung nhìn của kiến trúc sư phần mềm là một khía cạnh về chiều rộng đối lập với chiều sâu.
+
+Các đối tượng mà báo cáo này hướng đến bao gồm:
+\begin{itemize}
+	\item Người quản lý dự án: Người thực hiện quản lý dự án và phản hồi về chất lượng của hệ thống. Người quản lý dự án nên đọc toàn bộ tài liệu để lập kế hoạch và phân công các công việc.
+	\item Nhà phát triển: Người thực hiện nhiệm vụ phát triển hệ thống từ đầu vào là bản thiết kế và tài liệu để tạo thành đầu ra là một phiên bản có thể chạy được. Nhà phát triển phải đọc toàn bộ tài liệu để thực hiện đúng theo hệ thống đề ra.
+	\item Người viết tài liệu: Người sẽ viết tài liệu trong tương lai (các báo cáo, biên bản). Người viết tài liệu nên đọc để hiểu phần sơ đồ Use Case Main.
+\end{itemize}
+
+Tài liệu này gồm 5 phần chính:
+\begin{itemize}
+	\item Phần 1 - Sơ đồ bối cảnh hệ thống con: Thiết kế hệ thống con được sử dụng để đóng gói hành vi bên trong một “package”, nó cung cấp giao diện rõ ràng và chính thức, và nó theo quy ước sẽ không tiết lộ bất kỳ nội dung nội bộ nào của mình. Nó được sử dụng như một đơn vị của hành vi trong hệ thống, cung cấp khả năng đóng gói hoàn toàn các tương tác của một số lớp và/ hoặc các hệ thống con. Khả năng "encapsulation" - đóng gói của các thiết kế hệ thống con đối lập với khả năng của Artifact: Thiết kế gói - Design Package, không nhận ra giao diện và có thể hiển thị nội dung được đánh dấu là 'công khai'. Các gói được sử dụng chủ yếu để quản lý cấu hình và tổ chức mô hình, trong đó các hệ thống con cung cấp thêm ngữ nghĩa hành vi. 
+	\item Phần 2 - Xác định các phần tử thiết kế: Các lớp phân tích được làm mịn thành các phần tử mô hình thiết kế (các lớp thiết kế, các gói và các hệ thống con).
+	\item Phần 3 - Đóng gói các phần tử thiết kế: Đóng gói là một cơ chế có mục đích chung để tổ chức các phần tử thành các nhóm và nó cung cấp khả năng tổ chức mô hình đang được phát triển. 
+	\item Phần 4 - Các lớp kiến trúc và phụ thuộc: Phân lớp cung cấp một phân vùng logic của hệ thống con thành một số nhóm với quy tắc nhất định về cách các mối quan hệ có thể được hình thành giữa các lớp. Ngoài ra, việc phân lớp sẽ là một cách để hạn chế các phụ thuộc giữa các hệ thống con và cho kết quả là hệ thống được kết nối lỏng lẻo hơn và do đó dễ bảo trì hơn.
+	\item Phần 5 - Các gói và phụ thuộc: Một thiết kế gói và nội dung của nó là trách nhiệm của duy nhất của vai trò người thiết kế. Các phần tử trong gói này có thể phụ thuộc vào các phần tử có trong các gói khác, điều này dẫn đến sự phụ thuộc giữa các gói. Các phụ thuộc gói có thể được sử dụng như một công cụ để phân tích khả năng phục hồi của mô hình thiết kế: một mô hình với các gói phụ thuộc chéo thì có khả năng phục hồi để thay đổi thấp.
+\end{itemize}
+
+\subsection{Phạm vi dự án}
+
+Hệ thống hỗ trợ dạy và học trực tuyến được xây dựng như một phương tiện để kết nối giữa nhà trường, giảng viên và các sinh viên.
+
+Hệ thống sẽ được phát triển dưới dạng một ứng dụng web, Người dùng cuối sẽ tương tác với hệ thống qua Internet thông qua các thiết bị thông minh (laptop, PC, máy tính bảng, điện thoại thông minh). Sinh viên có thể tìm kiếm các khóa học, khám phá các lớp học của mình trong học kỳ, tham gia lớp học và làm các bài kiểm tra. Giảng viên có thể tạo lớp học, quản lý sinh viên và các lớp học của mình. Bên cạnh đó, người dùng có thể đăng tương tác với nhau qua các blog, diễn đàn trao đổi hay nhắn tin trực tiếp.
+
+\subsection{Tài liệu tham khảo}
+\nocite{*}
+\printbibliography[heading=none]
+
+\clearpage
+
+\end{document}
