@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{428.25bp}%
+    \setlength{\unitlength}{429bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,9 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.79334501)%
+  \begin{picture}(1,0.79370629)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{logic_view_package_diagram.pdf}}%
+    \put(0.06468531,0.73601399){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Presentation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{logic_view_package_diagram.pdf}}%
+    \put(0.06993007,0.43706294){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Application\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{logic_view_package_diagram.pdf}}%
+    \put(0.08741259,0.12762238){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Domain\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{logic_view_package_diagram.pdf}}%
+    \put(0.44055944,0.12762238){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Persistence\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{logic_view_package_diagram.pdf}}%
+    \put(0.82867133,0.12762238){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Services\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{logic_view_package_diagram.pdf}}%
+    \put(0.51923077,0.02272727){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Powered ByVisual Paradigm Community Edition\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{logic_view_package_diagram.pdf}}%
   \end{picture}%
 \endgroup%

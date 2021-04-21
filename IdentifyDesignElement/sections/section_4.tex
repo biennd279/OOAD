@@ -1,0 +1,74 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	% Please add the following required packages to your document preamble:
+	% \usepackage[table,xcdraw]{xcolor}
+	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+	% \usepackage{longtable}
+	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+	\begin{longtable}{|p{.5\linewidth}|p{.5\linewidth}|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Phần tử thiết kế\\ (lớp hoặc subsystem)\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Package}}                \\ \hline
+		LoginPage                & Middleware::Presentation                      \\ \hline
+		CourseContentPage        & Middleware::Presentation                      \\ \hline
+		ProfilePage              & Middleware::Presentation                      \\ \hline
+		LessonPage               & Middleware::Presentation                      \\ \hline
+		CourseMaterialPage       & Middleware::Presentation                      \\ \hline
+		CourseQuizPage           & Middleware::Presentation                      \\ \hline
+		CourseQuizResultPage     & Middleware::Presentation                      \\ \hline
+		CourseScorePage          & Middleware::Presentation                      \\ \hline
+		ChatListPage             & Middleware::Presentation                      \\ \hline
+		SettingPage              & Middleware::Presentation                      \\ \hline
+		TopicPage                & Middleware::Presentation                      \\ \hline
+		SubmissionPage           & Middleware::Presentation                      \\ \hline
+		NotificationPage         & Middleware::Presentation                      \\ \hline
+		CourseAccessManagePage   & Middleware::Presentation                      \\ \hline
+		AdminPanelPage           & Middleware::Presentation                      \\ \hline
+		BlogSystem               & Middleware::Presentation                      \\ \hline
+		AuthenticationController & Application::User Activities                  \\ \hline
+		MessageController        & Application::User Activities                  \\ \hline
+		CourseContentController  & Application::Teacher Activities               \\ \hline
+		OnlineLessonSystem       & Business Services                             \\ \hline
+		IOnlineLessonSystem      & Business Services::External System Interfaces \\ \hline
+		ParticipantController    & Application::Teacher Activities               \\ \hline
+		ScoreController          & Application::Teacher Activities               \\ \hline
+		AssignmentSystem         & Business Services                             \\ \hline
+		IAssignmentSystem        & Business Services::External System Interfaces \\ \hline
+		QuizController           & Application::Teacher Activities               \\ \hline
+		SubmissionController     & Application::Student Activities               \\ \hline
+		CourseFeedbackController & Application::Student Activities               \\ \hline
+		CourseMaterialController & Application::Teacher Activities               \\ \hline
+		NotificationSystem       & Business Services                             \\ \hline
+		INotificationSystem      & Middleware::Presentation                      \\ \hline
+		ContentBankController                                                                                          & Application::Teacher Activities \\ \hline
+		SettingController        & Application::User Activities                  \\ \hline
+		ForumController                                                                                                & Application::Teacher Activities \\ \hline
+		BlogSystem               & Application::User Activities                  \\ \hline
+		LessonController         & Application::Teacher Activities               \\ \hline
+		Account                  & Business Service::Domain::User                \\ \hline
+		TeacherAccount           & Business Service::Domain::User                \\ \hline
+		AdminAccount             & Business Service::Domain::User                \\ \hline
+		StudentAccount           & Business Service::Domain::User                \\ \hline
+		Course                   & Business Service::Domain::Course              \\ \hline
+		Badge                    & Business Service::Domain::Course              \\ \hline
+		BaseProfile              & Business Service::Domain::User                \\ \hline
+		StudentProfile           & Business Service::Domain::User                \\ \hline
+		TeacherProfile           & Business Service::Domain::User                \\ \hline
+		AdminProfile             & Business Service::Domain::User                \\ \hline
+		Forum                    & Business Service::Domain::Course              \\ \hline
+		Message                  & Business Service::Domain::Social              \\ \hline
+		ChatBox                  & Business Service::Domain::Social              \\ \hline
+		OnlineClass              & Business Service::Domain::Course              \\ \hline
+		Score                    & Business Service::Domain::Course              \\ \hline
+		Participant              & Business Service::Domain::Course              \\ \hline
+		Assignment               & Business Service::Domain::Course              \\ \hline
+		Quiz                     & Business Service::Domain::Course              \\ \hline
+		Submission               & Business Service::Domain::Course              \\ \hline
+		CourseFeedback           & Business Service::Domain::Course              \\ \hline
+		CourseMaterial           & Business Service::Domain::Course              \\ \hline
+		Notification             & Business Service::Domain::Social              \\ \hline
+		ContentBank              & Business Service::Domain::Course              \\ \hline
+		Blog                     & Business Service::Domain::Social              \\ \hline
+		Comment                  & Business Service::Domain::Course              \\ \hline
+	\end{longtable}
+\end{document}

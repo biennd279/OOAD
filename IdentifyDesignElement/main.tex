@@ -1,4 +1,5 @@
-\documentclass[12pt, a4paper]{article}
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+\documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{vietnam}
 \usepackage[T5]{fontenc}
 
@@ -8,7 +9,6 @@
 \usepackage{makeidx}
 \usepackage{imakeidx}
 \usepackage{graphicx}
-\usepackage{graphics}
 \usepackage{placeins}
 \usepackage[unicode, bookmarksopenlevel=4]{hyperref}
 \usepackage{makeidx}
@@ -28,7 +28,13 @@
 \usepackage{placeins}
 \usepackage{array}
 \usepackage[inkscapearea=page]{svg}
+\usepackage[off]{svg-extract}
 \usepackage{longtable}
+\usepackage{multirow}
+
+\svgpath{{./images} {./../images}}
+
+\svgsetup{clean=true}
 
 \let\orgautoref\autoref
 \providecommand{\Autoref}[1]
@@ -45,6 +51,7 @@
 	\orgautoref{#1}
 }
 
+
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
@@ -56,10 +63,10 @@
 \makeglossaries
 \loadglsentries{glossary}
 \graphicspath{ {./images/} {./../images}}
-\DeclareGraphicsExtensions{.png,.eps}
+\DeclareGraphicsExtensions{.png}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
-\title{Usecase Analysis}
+\title{Identify Design Element}
 
 \begin{document}
 	
@@ -91,21 +98,28 @@
 	
 	% \section{Section}
 	% \subfile{./sections/section_0.tex}
-	\section{Tổng quan}
+	\section{Giới thiệu}
 	\subfile{./sections/section_1.tex}
+
 	
-	\section{Sơ đồ tương tác ca sử dụng}
+	\section{Sơ đồ bối cảnh hệ thống con}
 	\subfile{./sections/section_2.tex}
 	
-	\section{Use Case Realization View of Participating Classes (VOPCs)}
+	\section{Xác định các phần tử thiết kế}
 	\subfile{./sections/section_3.tex}
 	
-	%\section{Mục tiêu và ràng buộc kiến trúc}
-	%\subfile{./sections/section_4.tex}
-	%\clearpage
-	
-	\section{Ánh xạ cơ chế phân tích từ lớp phân tích}
+	\section{Đóng gói các phần tử thiết kế}
 	\subfile{./sections/section_4.tex}
+	
+	
+	\section{Các lớp kiến trúc và phụ thuộc}
+	\subfile{./sections/section_5.tex}
+	
+	
+	\section{Các gói và phụ thuộc}
+	\subfile{./sections/section_6.tex}
+	
+	
 	
 	\clearpage
 	\glsaddall

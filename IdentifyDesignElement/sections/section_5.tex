@@ -1,0 +1,17 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	
+	Mô tả các lớp kiến trúc
+	\begin{description}
+		\item[Client Side] Lớp này là lớp mà nơi người dùng truy cập vào ứng dụng. Server layer chấp nhận yêu cầu thông qua kết nối internet từ client layer và chuyển các yêu cầu này đến tác nhân thích hợp. Máy chủ sẽ phản hồi kết quả từ tác nhân trở lại lớp người dùng. Trong trường hợp này, người dùng chỉ đơn giản là một trình duyệt.
+		\item[Presentation] Chứa các lớp cho mỗi biểu mẫu mà các tác nhân sử dụng để giao tiếp với Hệ thống.
+		\item[Server Side] Server layer hỗ trợ nhiều ứng dụng máy chủ khác nhau, trong đó “ứng dụng” bao gồm cả các trang web tĩnh. Máy chủ mạng sẽ biết trạng thái của máy chủ có tồn tại hay không. Thông thường, các máy chủ thường được quản lý bởi máy chủ mạng, tuy nhiên chương trình ứng dụng có thể đảm nhận một phần trách nhiệm này.
+		\item[Application] Chứa các lớp ứng dụng của các phần tử thiết kế cho chức năng xử lý chính của hệ thống.
+		\item[Business Services] Chứa các lớp để cung cấp các lớp hệ thống cho mục đích bảo trì.
+		\item[Middleware] Cung cấp các tiện ích và nền tảng dịch vụ độc lập.
+	\end{description}
+	
+	
+	
+\end{document}
