@@ -1,0 +1,16 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	\subsection{Giới thiệu}
+
+Đây là một báo cáo về việc xác định các phần tử thiết kế của nhóm 6.
+Tài liệu này được dùng để phân tích tương tác của các lớp phân tích để xác định các phần tử thiết kế của hệ thống.
+
+	
+	\subsection{Tài liệu tham khảo}
+	\nocite{*}
+	\printbibliography[heading=none]
+	
+	\clearpage
+	
+\end{document}

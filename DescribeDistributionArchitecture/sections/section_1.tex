@@ -1,0 +1,33 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+\subsection{Mục đích}
+
+Đây là một báo cáo về giải pháp phân tán của nhóm 6
+
+Tài liệu này được dùng để cung cấp những mô tả về kiến trúc phân tán. Dựa vào đó chúng ta có thể triển khai hệ thống một cách đúng đắn theo đúng đặc tả yêu cầu đã đề ra.
+
+\subsection{Đối tượng dự kiến và đề xuất cách đọc}
+
+Các đối tượng mà báo cáo này hướng đến bao gồm:
+\begin{itemize}
+	\item Quản lý dự án: là người quản lý và chịu trách nhiệm cho chất lượng của hệ thống. Quản lý dự án nên đọc toàn bộ tài liệu để lên kế hoạch và phân công công việc.
+	\item Nhà phát triển: là người triển khai hệ thống, chuyển từ bản thiết kế và tài liệu sang một hệ thống có thể chạy được. Nhà phát triển phải đọc toàn bộ tài liệu để triển khai được hệ thống một cách chính xác.
+	\item Người viết tài liệu:  người sẽ viết các tài liệu trong tương lai (các báo cáo, biên bản). Người viết tài liệu nên đọc để hiểu được phần biểu đồ ca sử dụng chính.
+\end{itemize}
+
+Phần này mô tả sự phân rã hệ thống thành các tiến trình nhẹ (các đơn luồng điều khiển) và các tiến trình nặng (nhóm các tiến trình nhẹ). Tổ chức các phần bằng cách nhóm các tiến trình có giao tiếp hoặc tương tác với nhau. Mô tả các chế độ giao tiếp chính giữa các tiến trình như chuyển tiếp tin nhắn, các cơ chế trao đổi và đồng bộ dữ liệu...
+
+\subsection{Phạm vi dự án}
+
+\textit{Hệ thống hỗ trợ dạy và học trực tuyến} được xây dựng như một phương tiện để kết nối giữa nhà trường, giảng viên và các sinh viên.
+ 
+Hệ thống sẽ được phát triển dưới dạng một ứng dụng web, Người dùng cuối sẽ tương tác với hệ thống qua Internet thông qua các thiết bị thông minh (laptop, PC, máy tính bảng, điện thoại thông minh). Sinh viên có thể tìm kiếm các khóa học, khám phá các lớp học của mình trong học kỳ, tham gia lớp học và làm các bài kiểm tra. Giảng viên có thể tạo lớp học, quản lý sinh viên và các lớp học của mình. Bên cạnh đó, người dùng có thể đăng tương tác với nhau qua các blog, diễn đàn trao đổi hay nhắn tin trực tiếp.
+
+\subsection{Tài liệu tham khảo}
+\nocite{*}
+\printbibliography[heading=none]
+
+\clearpage
+
+\end{document}
