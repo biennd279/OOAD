@@ -1,0 +1,56 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+\subsection{Mục đích}
+
+Đây là một báo cáo về chủ đề Phân tích và thiết kế hướng đối tượng của nhóm 6 về Hệ thống quản lý và hỗ trợ học tập trực tuyến. 
+
+
+Bản báo cáo được viết dựa theo định dạng tài liệu \textit{“IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998”}. 
+
+
+Tài liệu này được dùng để cung cấp một kiến trúc hỗ trợ phát triển mô hình thiết kế  Hệ thống quản lý và hỗ trợ học tập trực tuyến trong suốt các bài tập của khóa học. Điều này là do khóa học Phân tích và thiết kế hướng đối tượng tập trung vào chứng minh kiến trúc ảnh hưởng đến mô hình thiết kế như thế nào. Phân tích và thiết kế hướng đối tượng không phải là một khóa học kiến trúc mà khóa học mang đến cho sinh viên cái nhìn về kiến trúc và lý do tại sao nó lại quan trọng.
+
+
+\subsection{Đối tượng dự kiến và đề xuất cách đọc}
+
+Mặc dù có thể có nhiều đối tượng đọc nhưng tài liệu này phù hợp với:
+
+\begin{description}
+	\item[Người quản lý dự án] người quản lý và chịu trách nhiệm đối với hệ thống này. Người quản lý dự án nên đọc toàn bộ tài liệu để lên kế hoạch và giao công việc cho các nhân viên của mình.
+	\item[Người phát triển] là người triển khai hệ thống này từ phiên bản thiết kế đến phiên bản có thể chạy được. Người phát triển phải đọc toàn bộ tài liệu để triển khai hệ thống một cách đúng đắn.
+	\item[Người viết tài liệu] người sẽ viết những những tài liệu trong tương lai (như báo cáo, biên bản cuộc họp). Người viết tài liệu nên đọc để hiểu các sơ đồ ca sử dụng chính.
+	\item[Người thiết kế] các thiết kế phải đáp ứng các yêu cầu quy định trong SRS này.
+	\item[Giảng viên]là người tham vào hệ thống với vai trò là người cung cấp nội dung.
+	\item[Sinh viên] là người tham gia vào hệ thống với vai trò là sử dụng tài nguyên của hệ thống. 
+	
+\end{description}
+
+Tài liệu cung cấp một mô tả tổng quan về các mục tiêu của kiến trúc, các ca sử dụng hỗ trợ bởi hệ thống và các kiểu và thành phần kiến trúc đã được chọn để đạt được các ca sử dụng phù hợp nhất. Khung làm việc này sau đó cho phép phát triển các tiêu chí thiết kế và tài liệu xác định các tiêu chuẩn kỹ thuật và miền một cách chi tiết.
+
+
+Tài liệu này giúp người đọc có được cái nhìn tổng quan về kiến trúc hệ thống. Các nội dung chính trong báo cáo bao gồm: xác định các cơ chế phân tích, ánh xạ cơ chế phân tích, cơ chế thiết kế, cơ chế cài đặt và các phần kiến trúc chính:
+
+\begin{description}
+	\item[Các cơ chế kiến trúc] Phần này mô tả các yêu cầu và mục tiêu phần mềm có ảnh hưởng đáng kể đến kiến trúc, ví dụ: an toàn, bảo mật, quyền riêng tư, sử dụng sản phẩm có sẵn, tính di động, phân phối và tái sử dụng. Nó cũng nắm bắt các ràng buộc đặc biệt có thể áp dụng: chiến lược thiết kế và triển khai, các công cụ phát triển, cấu trúc nhóm, lịch biểu, mã kế thừa, v.v.
+	\item[Khung nhìn logic] Phần này mô tả các phần có ý nghĩa về mặt kiến trúc của mô hình thiết kế, chẳng hạn như phân tách thành các hệ thống con và gói. Và đối với mỗi gói quan trọng, phân tách của nó thành các lớp và các tiện ích lớp. Bạn nên giới thiệu các lớp có ý nghĩa về mặt kiến trúc và mô tả trách nhiệm của họ, cũng như một vài mối quan hệ, hoạt động và thuộc tính rất quan trọng.
+	\item[Khung nhìn tiến trình] Phần này mô tả sự phân rã của hệ thống thành các quy trình nhẹ (các luồng điều khiển đơn) và các quy trình nặng (nhóm các quy trình nhẹ). Tổ chức các phần theo nhóm các tiến trình giao tiếp hoặc tương tác. Mô tả các chế độ giao tiếp chính giữa các tiến trình, chẳng hạn như chuyển tin nhắn, ngắt và điểm hẹn.
+	\item[Khung nhìn triển khai] Phần này mô tả một hoặc nhiều tiến trình cấu hình mạng vật lý (phần cứng) khi phần mềm được triển khai và chạy.
+	
+\end{description}
+
+\subsection{Phạm vi dự án}
+
+Hệ thống hỗ trợ dạy và học trực tuyến được xây dựng như một phương tiện để kết nối giữa nhà trường, giảng viên và các sinh viên. 
+
+
+Hệ thống sẽ được phát triển dưới dạng một ứng dụng web, Người dùng cuối sẽ tương tác với hệ thống qua Internet thông qua các thiết bị thông minh (laptop, PC, máy tính bảng, điện thoại thông minh). Sinh viên có thể tìm kiếm các khóa học, khám phá các lớp học của mình trong học kỳ, tham gia lớp học và làm các bài kiểm tra. Giảng viên có thể tạo lớp học, quản lý sinh viên và các lớp học của mình. Bên cạnh đó, người dùng có thể đăng tương tác với nhau qua các blog, diễn đàn trao đổi hay nhắn tin trực tiếp.
+
+
+\subsection{Tài liệu tham khảo}
+\nocite{*}
+\printbibliography[heading=none]
+
+\clearpage
+
+\end{document}

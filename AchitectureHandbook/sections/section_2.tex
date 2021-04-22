@@ -1,0 +1,53 @@
+\documentclass[./../main_file.tex]{subfiles}
+
+\begin{document}
+	
+\subsection{Các cơ chế phân tích}
+\subsubsection{Cơ chế về tính nhất quán}
+Cần phải xác định được những đặc điểm sau để đảm bảo các thực thể của các lớp trở nên nhất quán
+\begin{description}
+	\item[Dung lượng] Số lượng tối đa các đối tượng cần lưu trữ bền vững. 
+	\item[Phạm vi] Xác định tất cả các lớp mà thể hiện của chúng vần được lưu trữ cho các lần thực thi sau của hệ thống.
+	\item[Quy mô] Xác định miền số lượng các đối tượng cần lưu trữ bền vững.
+	\item[Thời lượng] Xác định khoảng thời gian tối đa mà các đối tượng cần lưu trữ bền vững.
+	\item[Cơ chế truy cập] Vấn đề đặt ra là làm thế nào để một đối tượng được xác định và truy xuất một cách chính xác (duy nhất)
+	\item[Tần suất cập nhật] Các đối tượng có thường xuyên giữ nguyên trạng thái không hay thường xuyên được cập nhật
+	\item[Tính ổn định (Tin cậy)] Các đối tượng có cần phải tồn tại được nếu có sự cố xảy ra ở một tiến trình, vi xử lý hay là cả hệ thống?
+\end{description}
+
+\subsubsection{Cơ chế về việc giao tiếp}
+Với tất cả các phần tử mô hình cần giao tiếp với các thành phần hoặc dịch vụ chạy trên một tiến trình hoặc luồng khác, ta cần phải xác định:
+\begin{description}
+	\item[Độ trễ] Các tiến trình phải giao tiếp với nhau trong bao lâu?
+	\item[Tính đồng bộ] Các giao tiếp không đồng bộ
+	\item[Kích thước của thông điệp] Nên để thành một phổ thay vì một con số đơn lẻ
+	\item[Giao thức] Quản lý, bộ đệm luồng…
+\end{description}
+
+\subsubsection{Cơ chế về việc bảo mật}
+Với mỗi lớp, hệ thống con, gói, ta cần xác định được những tiêu chí về bảo mật sau:
+\begin{description}
+	\item[Độ chi tiết của dữ liệu] Mức độ sâu của dữ liệu được biểu diễn bởi bảng sự thật hoặc chiều trong kho dữ liệu.
+	\item[Độ chi tiết của người dùng] Xác định hệ thống có bao nhiêu quyền?
+	\item[Các quy định an ninh] Các tiêu chuẩn về bảo mật nhằm bảo vệ dữ liệu cá nhân của người dùng.
+	\item[Các loại đặc quyền] Với mỗi một vai trò, cần xác định họ có những quyền gì với hệ thống.
+\end{description}
+
+\subsubsection{Các cơ chế khác}
+	Các cơ chế khác mà hệ thống cần quan tâm:
+\begin{description}
+	\item[Cơ chế phân tán] Dữ liệu sẽ được tổ chức lưu trong các máy chủ ra sao để đảm bảo hệ thống luôn hoạt động?
+	\item[Cơ chế điều khiển lỗi và thất bại] Các lỗi của hệ thống được báo cáo và xử lý như thế nào?
+	\item[Cơ chế quản lý giao dịch] Làm sao các giao dịch trong hệ thống an toàn khỏi các mã độc đồng thời vẫn nhanh, ít bước xác thực nhất. 
+	\item[Cơ chế về dư thừa thông tin] Tổ chức lưu trữ thông tin hiệu quả, tối ưu cho bộ nhớ. Dữ liệu sẽ được lưu trong hệ thống bao lâu trước khi bị xóa bỏ.
+	
+\end{description}
+
+
+\subsection{Ánh xạ cơ chế phân tích, cơ chế thiết kế, cơ chế cài đặt}
+
+
+
+
+
+\end{document}
