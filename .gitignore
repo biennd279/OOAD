@@ -278,4 +278,4 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 *.pdf
-*.eps
+# *.eps
