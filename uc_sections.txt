@@ -1,0 +1,18 @@
+Đăng nhập hệ thống
+Quản lý thông tin cá nhân
+Đăng Blog
+Nhắn tin
+Tham gia lớp học
+Tìm kiếm và khám phá
+Thảo luận trực tuyến
+Thực hiện kiểm tra trực tuyến
+Nộp bài tập
+Khám phá khóa học
+Đánh giá khóa học
+Quản lý hoạt động sinh viên
+Quản lý hoạt động diễn đàn
+Quản lý nội dung khóa học
+Quản lý danh sách sinh viên
+Quản lý dạy học trực tuyến
+Quản lý tài khoản
+Quản lý danh sách khóa học
