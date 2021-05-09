@@ -2,8 +2,12 @@
 
 for d in */
 do
-    echo $d
     cd $d
-    latexmk -pdf main.tex 2>>err.txt
+    latexmk -pdf main.tex -halt-on-error &>/dev/null
+    if [ "$?" = "0" ]; then
+        echo $d OK
+    else
+        echo $d Error
+    fi
     cd ..
 done
