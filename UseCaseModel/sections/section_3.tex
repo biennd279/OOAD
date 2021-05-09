@@ -26,15 +26,15 @@
 				\hline
 				\textbf{Hành động}                        & \textbf{Hệ thống phản hồi}                                                                    & \textbf{Dữ liệu}              
 				\\ \hline
-				1. Người dùng chọn đăng nhập vào hệ thống & 2. Hệ thống yêu cầu người dùng nhập tên hoặc mã số sinh viên hoặc mã số giảng viên và mật khẩu &                               
+				1. Người dùng yêu cầu đăng nhập vào hệ thống & 2. Hệ thống hiển thị biểu mẫu đăng nhập &                               
 				\\ \hline
-				3. Người điền các thông tin               & 4. Hệ thống kiểm định thông tin và chuyển hướng người dùng vào hệ thống.                      & Tên/Mã và mật khẩu người dùng 
+				3. Người nhập và gửi các thông tin               & 4. Hệ thống kiểm định thông tin và chuyển hướng người dùng vào hệ thống.                      & Tên/Mã và mật khẩu người dùng 
 				\\ \hline
 				
 		\end{longtable}
 		\paragraph{Luồng thay thế}
 		\begin{itemize}
-			\item Tại bước 3: Người dùng điền thiếu thông tin, hệ thống yêu cầu nhập lại
+			\item Tại bước 3: Người dùng điền thiếu thông tin. Hệ thống thông báo và yêu cầu nhập lại. Người dùng nahajp lại thông tin còn thiếu. Tiếp tục bước 4.
 			\item Tại bước 4:  Hệ thống kiểm định thông tin đăng nhập sai, hệ thống hiển thị thông tin lỗi, yêu cầu nhập lại. Người dùng có thể tiếp tục lặp lại luồng sự kiện hoặc thoát khỏi trang đăng nhập.
 			
 		\end{itemize}
@@ -68,8 +68,8 @@ Bắt đầu khi người dùng đăng nhập vào hệ thống
 \end{longtable}
 \paragraph{Luồng thay thế}
 \begin{itemize}
-	\item Tại bước 5: Người dùng không lưu, hệ thống gửi thông báo xác nhận hủy bỏ việc chỉnh sửa, nếu người dùng đồng ý thì chuyển sang hiển thị trang thông tin người dùng ban đầu.
-	\item Tại bước 6: Người dùng nhập sai cú pháp hoặc điền thiếu một số thông tin, hệ thống yêu cầu nhập lại.
+	\item Tại bước 5: Người dùng không lưu, hệ thống gửi thông báo xác nhận hủy bỏ việc chỉnh sửa. Người dùng xác nhận. hệ thống chuyển sang hiển thị trang thông tin người dùng ban đầu.
+	\item Tại bước 6: Người dùng nhập sai cú pháp hoặc điền thiếu một số thông tin, hệ thống yêu cầu nhập lại. Quay lại bước 5.
 	
 \end{itemize}
 \subsubsection{Yêu cầu đặc biệt}
@@ -88,7 +88,7 @@ Xác thực tính đúng đắn của thông tin người dùng đã chỉnh s�
 
 \subsection{Tương tác với người dùng khác}
 \subsubsection{Mô tả tóm tắt}
-Hệ thống có các tác vụ như đăng blog, nhắn tin thảo luận giữa những người dùng trong cùng một khóa học. Người dùng có thể xóa tin nhắn, xóa cuộc trò chuyện ở phía mình.
+Hệ thống có các tác vụ như đăng blog, nhắn tin thảo luận giữa những người dùng trong cùng một khóa học. Trong họat động đăng blog, người dùng có thể tạo, chỉnh sửa blog của mình, những người dùng khác trên hệ thống cũng có thể bình luận vào bài viết. Trong hoạt động nhắn tin, người dùng có thể xóa tin nhắn, xóa cuộc trò chuyện ở phía mình. 
 \subsubsection{Luồng sự kiện}
 \paragraph{Luồng chính}
 	Bắt đầu khi người dùng đã đăng nhập vào hệ thống
@@ -97,18 +97,18 @@ Hệ thống có các tác vụ như đăng blog, nhắn tin thảo luận giữ
 \begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
 		\hline
 		\textbf{Hành động}                             & \textbf{Hệ thống phản hồi}                                & \textbf{Dữ liệu}                       \\ \hline
-		1. Tại trang chủ, người dùng chọn mục nhắn tin & 2. Hệ thống chuyển giao diện hiển thị các cuộc trò chuyện & Thông tin các cuộc trò chuyện          \\ \hline
-		3. Người dùng tìm kiếm tên người dùng khác     & 4. Hệ thống tìm kiếm người dùng trong các khóa học         & Danh sách những người có chung khóa học \\ \hline
-		5. Người dùng chọn người dùng mình muốn nhắn tin         & 6. Hệ thống trả về cuộc trò chuyện của hai người  & Tin nhắn và thông tin về cuộc trò chuyện \\ \hline
-		7. Người dùng nhắn tin với người dùng khác trên hệ thống & 6. Hệ thống cập nhật tin nhắn của cuộc trò chuyện & Những tin nhắn trong cuộc trò chuyện     \\ \hline
+		1. Người dùng yêu cầu mục nhắn tin & 2. Hệ thống chuyển giao diện hiển thị các cuộc trò chuyện & Danh sách các cuộc trò chuyện          \\ \hline
+		3. Người dùng tìm kiếm tên người dùng khác     & 4. Hệ thống tìm kiếm người dùng        & Danh sách những người dùng theo từ khóa \\ \hline
+		5. Người dùng chọn người dùng mình muốn nhắn tin         & 6. Hệ thống kiểm tra sự tồn tại của cuộc trò chuyện. Cuộc trò chuyện tồn tại, hệ thống trả về cuộc trò chuyện của hai người & Thông tin các người dùng, cuộc trò chuyện \\ \hline
+		7. Người dùng nhắn tin & 6. Hệ thống cập nhật tin nhắn của cuộc trò chuyện & Nột dung tin nhắn, thời gian gửi, người gửi, người nhận và cuộc trò chuyện\\ \hline
 \end{longtable}
 Họat động đăng blog
 \begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
 		\hline
 		\textbf{Hành động} & \textbf{Hệ thống phản hồi} & \textbf{Dữ liệu} \\
-		1. Tại trang chủ, người dùng chọn mục blog & 2. Hệ thống chuyển giao diện hiển thị các blog được đăng trên hệ thống & Danh sách blog của hệ thống \\ \hline
-		3. Người dùng chọn mục blog của tôi & 4. Hệ thống hiển thị các blog mà người dùng đã đăng & Danh sách blog của người dùng \\ \hline
-		5. Người dùng chọn tạo mới blog & 6. Hệ thống hiển thị giao diện tạo mới blog &  \\ \hline
+		1. Người dùng yêu cầu mục blog & 2. Hệ thống chuyển giao diện hiển thị các blog được đăng trên hệ thống & Danh sách blog của hệ thống \\ \hline
+		3. Người dùng yêu cầu các blog cá nhân & 4. Hệ thống hiển thị các blog mà người dùng đã đăng & Danh sách blog của người dùng \\ \hline
+		5. Người dùng yêu cầu tạo mới blog & 6. Hệ thống hiển thị giao diện tạo mới blog &  \\ \hline
 	7. Người dùng nhập các trường thông tin và đăng tải & 6. Hệ thống thông báo xác nhận đăng tải blog và cập nhật blog trên danh sách các blog & Nội dung blog, thời gian tạo, tác giả, đối tượng xem được, đối tượng bị hạn chế xem,... \\ \hline
 
 \end{longtable}
@@ -117,6 +117,7 @@ Họat động đăng blog
 \begin{itemize}
 	\item Tại bước 7: người dùng chọn một tin nhắn trong cuộc trò chuyện và chọn xóa, hệ thống thông báo xác nhận và xóa tin nhắn ra khỏi cuộc trò chuyện bên phía người dùng.
 	\item Tại bước 2: Sau khi hệ thống hiển thị danh sách các cuộc trò chuyện, người dùng chọn một cuộc trò chuyện bất kỳ và xóa, hệ thống thông báo xác nhận và xóa cuộc trò chuyện khỏi mục tin nhắn bên phía người dùng.
+	\item Tại bước 6: Hệ thống kiểm tra sự tồn tại của cuộc trò chuyện. Kết quả trả về không tồn tại, hệ thống yêu cầu tạo mới cuộc trò chuyện (Dữ liệu: thành viên, thời gian tạo, tên cuộc trò chuyện). Hệ thống trả về cuộc trò chuyện vừa được tạo của hai người. Tiếp tục bước 7 theo kịch bản chính. 
 \end{itemize}
 	Hoạt động đăng blog:
 \begin{itemize}
@@ -150,10 +151,10 @@ Bắt đầu khi người dùng truy cập vào hệ thống, đã có khóa h�
 		\textbf{Hành động}                                           & \textbf{Hệ thống phản hồi}                                                   & \textbf{Dữ liệu}           \\ \hline
 		1. Sinh viên chọn khóa học phần tại danh mục các khóa học phần & 2. Hệ thống hiển thị danh sách lớp của sinh viên                             & Danh sách các khóa học phần \\ \hline
 		3. Sinh viên truy cập khóa học phần                           & 4. Hệ thống chuyển đến hiển thị giao diện khóa học phần mà sinh viên truy cập & Thông tin khóa học phần     \\ \hline
-		5. Sinh viên chọn tham gia khóa học trực tuyến                & 6. Hệ thống gửi thông báo cho sinh viên về phiên học đang được diễn ra       &                            \\ \hline
-		7. Sinh viên tham gia khóa học có thể theo dõi, thảo luận, tương tác trực tiếp với giảng viên và các sinh viên khác &
+		5. Sinh viên yêu cầu tham gia phiên học trực tuyến              & 6. Hệ thống gửi thông báo cho sinh viên về phiên học đang được diễn ra       &  Phiên học trực tuyến, người tạo (giảng viên), số lượng hiện đang tham gia                    \\ \hline
+		7. SSinh viên yêu cầu nhắn tin, thảo luận &
 		8. Hệ thống cập nhật các tin nhắn thảo luận &
-		Các tin nhắn thảo luận \\ \hline
+		Các tin nhắn thảo luận, thời gian gửi, người gửi, phiên học, khóa học \\ \hline
 \end{longtable}
 \paragraph{Luồng thay thế}
 \begin{itemize}
@@ -162,8 +163,8 @@ Bắt đầu khi người dùng truy cập vào hệ thống, đã có khóa h�
 			\hline
 			\textbf{Hành động}                          & \textbf{Hệ thống phản hồi}                                    & \textbf{Dữ liệu}          \\ \hline
 			1. Sinh viên tìm kiếm tên khóa học           & 2. Hệ thống hiển thị danh sách lớp môn học liên quan          & Danh sách các lớp môn học \\ \hline
-			3. Sinh viên truy cập lớp môn học mong muốn & 4. Hệ thống hiển thị yêu cầu báo danh để tham gia lớp môn học &                           \\ \hline
-			5. Sinh viên chọn  yêu cầu tham gia khóa học & 6. Hệ thống gửi thông báo thành công cho sinh viên            &                           \\ \hline
+			3. Sinh viên truy cập lớp môn học mong muốn & 4. Hệ thống hiển thị yêu cầu báo danh để tham gia lớp môn học &                          \\ \hline
+			5. Sinh viên yêu cầu tham gia khóa học & 6. Hệ thống gửi thông báo thành công cho sinh viên            &                           \\ \hline
 			7. Sinh viên tham gia khóa học &
 			8. Hệ thống cập nhật sinh viên vào danh sách sinh viên của khóa học phần, và cập nhật khóa học vào danh sách khóa học của sinh viên &
 			Thông tin của sinh viên và khóa học \\ \hline
@@ -193,8 +194,8 @@ Bắt đầu khi người dùng đăng nhập vào hệ thống
 \begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
 		\hline
 		\textbf{Hành động}                          & \textbf{Hệ thống phản hồi}                         & \textbf{Dữ liệu} \\ \hline
-		1. Người dùng muốn tìm kiếm, khám phá &
-		2. Hệ thống hiển thị trang chủ của hệ thống gồm ô tìm kiếm, các bài đăng của quản trị viên, danh sách những người dùng online, hạn bài nộp, danh sách khóa học phần đã đăng kỳ,.. &
+		1. Người dùng yêu cầu tìm kiếm, khám phá &
+		2. Hệ thống hiển thị trang chủ của hệ thống gồm ô tìm kiếm, các bài đăng của quản trị viên, danh sách những người dùng online, hạn bài nộp, danh sách khóa học phần đã đăng ký,.. &
 		\\ \hline
 		3. Người dùng nhập dữ liệu muốn tìm kiếm (tên khóa học, tên học kỳ, giảng viên...) và lựa chọn các bộ lọc, tiêu chí có trên giao diện hệ thống rồi xác nhận &
 		4. Hệ thống hiển thị các danh sách các khóa học liên quan &
@@ -433,15 +434,12 @@ Cấp phép truy cập cho sinh viên: Luồng bắt đầu khi giảng viên đ
 \begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
 		\hline
 		\textbf{Hành động}                     & \textbf{Hệ thống phản hồi}                                                                  & \textbf{Dữ liệu}                \\ \hline
-		1.1. Giảng viên truy cập vào thông báo & 1.2. Hệ thống hiển thị yêu cầu truy cập của sinh viên                                       & Thông tin sinh viên và khóa học \\ \hline
-		1.3. Giảng viên chấp nhận yêu cầu &
-		1.4. Hệ thống thông báo xác nhận thành công, hệ thống cập nhật danh sách sinh viên và chuyển hướng đến trang danh sách sinh viên khóa học &
-		Danh sách sinh viên khóa học \\ \hline
-		2.1. Giảng viên chọn một sinh viên     & 2.2. Hệ thống hiển thị thông tin sinh viên và quá trình học tập của sinh viên trong khóa học & Thông tin sinh viên             \\ \hline
-		2.3 Giảng viên chọn cấp huy hiệu       & 2.4. Hệ thống cập nhật huy hiệu cho sinh viên                                               &                                 \\ \hline
-\end{longtable}
+		1. Giảng viên yêu cầu truy cập khóa học & 2.Hệ thống hiển thị giao diện khóa học                                       & Khóa học \\ \hline
+		3. Giảng viên yêu cầu xem các yêu cầu tham gia khóa học & 4. Hệ thống trả về danh sách yêu cầu & Danh sách yêu cầu tham gia khóa học (gồm sinh viên, khóa học, thời gian yêu cầu) \\ \hline
+		4. Giảng viên chấp nhận yêu cầu tham gia khóa học của sinh viên & 5. Hệ thống xử lý yêu cầu, cập nhật danh sách sinh viên trong khóa học, thêm khóa học trong danh sách khóa học của sinh viên. &
+		Khóa học, thông tin sinh viên, thông báo \\ \hline
 \paragraph{Luồng thay thế}
-Tại bước 1.3: Giảng viên không chấp nhận yêu cầu, hệ thống xóa yêu cầu của sinh viên, không thêm mới sinh viên và giữ nguyên giao diện trang thông báo.
+Tại bước 4: Giảng viên không chấp nhận yêu cầu. Hệ thống xóa yêu cầu của sinh viên, không thêm mới sinh viên và gửi thông báo cho sinh viên.
 \subsubsection{Yêu cầu đặc biệt}
 Sinh viên có yêu cầu tham gia vào khóa học
 
@@ -533,8 +531,8 @@ bắt đầu khi giảng viên đăng nhập vào hệ thống
 		3. Giảng viên truy cập vào một khóa học và chọn danh sách người tham gia khóa học &
 		4. Hệ thống hiển thị danh sách tất cả những người tham gia khóa học, bao gồm cả giảng viên &
 		Tên người tham gia, địa chỉ email, thời gian truy cập khóa học gần nhất \\ \hline
-		5. Giảng viên có thể tạo bộ lọc để hiển thị danh sách theo ý muốn             & 6. Hệ thống hiển thị danh sách người tham gia theo bộ lọc &                  \\ \hline
-		7. Giảng viên thêm người tham gia khóa học, sửa thông tin, xóa người tham gia & 8. Hệ thống ghi nhận thay đổi của người dùng              &                  \\ \hline
+		5. Giảng viên tạo bộ lọc để hiển thị danh sách theo ý muốn             & 6. Hệ thống hiển thị danh sách người tham gia theo bộ lọc &                  \\ \hline
+		7. Giảng viên thêm người tham gia & 8. Hệ thống kiểm tra và ghi nhận thay đổi của người dùng              &                  \\ \hline
 \end{longtable}
 \paragraph{Luồng thay thế}
 \begin{itemize}
@@ -565,9 +563,9 @@ bắt đầu khi giảng viên đăng nhập khóa học và muốn tạo khóa 
 \begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
 		\hline
 		\textbf{Hành động}              & \textbf{Hệ thống phản hồi}                 & \textbf{Dữ liệu} \\ \hline
-		1. Giảng viên chọn danh sách khóa học của mình & 2. Hệ thống hiển thị danh sách khóa học & Danh sách khóa học của giảng viên \\ \hline 
-		3. Giảng viên truy cập vào khóa học & 4. Hệ thống hiển thị lựa chọn “Tạo lớp học”. &                  \\ \hline
-		5. Giảng viên chọn “Tạo lớp học”.                                  & 4. Hệ thống khởi tạo khóa học trực tuyến và thông báo cho thành viên lớp. &  Thời gian tạo, người tham gia, người tạo,... \\ \hline
+		1. Giảng viên yêu cầu danh sách khóa học của mình & 2. Hệ thống hiển thị danh sách khóa học trong học kỳ & Danh sách khóa học của giảng viên \\ \hline 
+		3. Giảng viên truy cập vào khóa học & 4. Hệ thống hiển thị giao diện khóa học &  Nội dung khóa học              \\ \hline
+		5. Giảng viên yêu cầu tạo lớp học trực tuyến                 & 4. Hệ thống khởi tạo khóa học trực tuyến và thông báo cho thành viên lớp. &  Thời gian tạo, người tham gia, người tạo,... \\ \hline
 		7. Giảng viên chọn chia sẻ màn hình, chia sẻ âm thanh và hình ảnh. & 8. Hệ thống chuyển dữ liệu hình ảnh và âm thành tới người tham gia khác. &  \\ \hline
 \end{longtable}
 \paragraph{Luồng thay thế}
@@ -597,11 +595,11 @@ Quản trị viên có quyền cấp phát tài khoản sinh viên và giảng v
  		\hline
  		\textbf{Hành động}                                       & \textbf{Hệ thống phản hồi}                            & \textbf{Dữ liệu}    \\ \hline
  		1. Quản trị viên truy cập danh sách tài khoản của trường & 2. Hệ thống hiển thị danh sách tài khoản              & Danh sách tài khoản \\ \hline
- 		3. Quản trị viên chọn cấp mới                            & 4. Hệ thống hiển thị trang đăng ký thêm mới tài khoản &                     \\ \hline
- 		5. Quản trị viên nhập thông tin của sinh viên và  xác nhận &
+ 		3. Quản trị viên yêu cầu cấp mới tài khoản                          & 4. Hệ thống hiển thị trang đăng ký thêm mới tài khoản &                     \\ \hline
+ 		5. Quản trị viên nhập thông tin của sinh viên và xác nhận &
  		6. Hệ thống thông báo xác nhận và cập nhật thêm mới tài khoản, hiển thị danh sách tài khoản quản trị viên đã đăng ký &
  		Thông tin tài khoản \\ \hline
- 		7. Quản trị viên chọn xuất dữ liệu danh sach             & 8. Hệ thống trả về file trích xuất dữ liệu            & File trích xuất     \\ \hline
+ 		7. Quản trị viên yêu cầu xuất dữ liệu danh sach             & 8. Hệ thống trả về file trích xuất dữ liệu            & File trích xuất     \\ \hline
 \end{longtable}
 \paragraph{Luồng thay thế}
 \begin{itemize}
