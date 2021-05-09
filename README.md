@@ -10,3 +10,5 @@ sudo apt install texlive-latex-extra latexmk biber texlive-font-utils texlive-la
 pip3 install cairosvg
 ```
 Then, download `TexStudio` or my personal favorite, `Latex Workshop` extension on VSCode and compile awayyy
+
+**Too many change not show here**
