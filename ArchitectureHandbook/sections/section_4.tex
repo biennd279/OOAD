@@ -113,42 +113,46 @@
 		%
 		\endhead
 		%
-		& AccountManageProcess        \\ \hline
-		& AuthenticationControllerProcess                  \\ \hline
-		& AuthenticationProcess       \\ \hline
-		& AuthenticationSystemAccess  \\ \hline
-		& AuthorizationProcess        \\ \hline
-		& BlogApplication             \\ \hline
-		& BlogSystemAccess            \\ \hline
-		& CourseApplication           \\ \hline
-		& CourseContentApplication    \\ \hline
-		& CourseControllerProcess     \\ \hline
-		& CourseListApplication       \\ \hline
-		& CourseManageProcess         \\ \hline
-		& CourseProcess               \\ \hline
-		& CourseQuizApplication       \\ \hline
-		& CourseScoreApplication      \\ \hline
-		& CourseSearchApplication     \\ \hline
-		& CreateBlogProcess           \\ \hline
-		& DatabaseAccess              \\ \hline
-		& FeedbackApplication         \\ \hline
-		& FeedbackControllerProcess   \\ \hline
-		& FileProcess                 \\ \hline
-		& ForumApplication            \\ \hline
-		& ForumControllerProcess      \\ \hline
-		& LessonProcess               \\ \hline
-		& LoginApplication            \\ \hline
-		& ManageStudentAccessProcess  \\ \hline
-		& MessageApplication          \\ \hline
-		& MessageSystemAccess         \\ \hline
-		& NotificationSystemAccess    \\ \hline
-		& OnlineLessonApplication     \\ \hline
-		& QuizControllerProcess       \\ \hline
-		& ScoreControllerProcess      \\ \hline
-		& SendMessageProcess          \\ \hline
-		& SubmissionApplication       \\ \hline
-		& SubmissionControllerProcess \\ \hline
-		& UpdateProfileProcess        \\ \hline
-		& UserApplication             \\ \hline
+		LoginPage & LoginApplication        \\ \hline
+		AuthenticationController & AuthenticationControllerProcess \\ \hline
+		AuthenticationSystem	&AuthenticationSystemAcess \\ \hline
+ProfileManagementPage	&UserApplication \\ \hline
+ProfileController	&UpdateProfileProcess \\ \hline
+CreateNewBlogPage	&BlogApplication \\ \hline
+BlogController	&CreateBlogProcess \\ \hline
+BlogSystem	&BlogSystemAccess \\ \hline
+SendMessagePage	&MessageApplication \\ \hline
+MessageController	&SendMessageProcess \\ \hline
+MessageSystem	&MessageSystemAccess \\ \hline
+CourseContentPage	& \multirow{2}{*}{OnlineLessonApplication} \\ 
+LessonPage & \\ \hline
+\multirow{3}{*}{CourseController}	&ManageStudentAccessProcess \\
+	&CourseManageProcess \\
+	&CourseProcess \\ \hline
+OnlineLessonSystem	& LessonProcess \\ \hline
+CourseListPage	& \multirow{2}{*}{CourseSearchApplication} \\
+SearchCoursePage & \\ \hline
+ForumPage	& \multirow{2}{*}{ForumApplication} \\
+TopicPage	& \\ \hline
+ForumController	&ForumControllerProcess \\ \hline
+CourseQuizPage	&CourseQuizApplication \\ \hline
+QuizController	&QuizControllerProcess \\ \hline
+ScoreController	&ScoreControllerProcess \\ \hline
+SubmissonPage	&SubmissonApplication \\ \hline
+SubmissonController	&SubmissionControllerProcess \\ \hline
+CourseScorePage	&CourseScoreApplication \\ \hline
+ScoreController	&ScoreControllerProcess \\ \hline
+FeedbackPage	&FeedbackApplication \\ \hline
+FeedbackController	&FeedbackControllerProcess \\ \hline
+CourseAccessManagePage	&CourseApplication \\ \hline
+NotificationSystem	&NotificationAccessProcess \\ \hline
+CourseContentPage	&CourseContentApplication \\ \hline
+AddMemberToCoursePage	& \multirow{2}{*}{UserApplication} \\ 
+CreateOnlineLivePage	&  \\ \hline
+\multirow{2}{*}{CourseMaterialController}	&CourseManageProcess \\
+	&AuthorizationProcess \\ \hline
+AccountActionPage	&UserApplication \\ \hline
+\multirow{2}{*}{UserController}	&AccountManageProcess \\
+	&AuthenticationProcess \\ \hline
 	\end{longtable}
 \end{document}
