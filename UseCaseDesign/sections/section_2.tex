@@ -26,6 +26,18 @@
     \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_sec_login.eps}
     \caption{Biểu đồ lớp - Đăng nhập hệ thống (tích hợp bảo mật)}
 \end{figure}
+\subsubsection{Đăng nhập hệ thống (tích hợp tất cả)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_sec_login.eps}
+    \caption{Biểu đồ tuần tự - Đăng nhập hệ thống (tích hợp tất cả)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_sec_login.eps}
+    \caption{Biểu đồ lớp - Đăng nhập hệ thống (tích hợp tất cả)}
+\end{figure}
+
 
 \subsection{Quản lý thông tin cá nhân}
 \subsubsection{Quản lý thông tin cá nhân (tích hợp hệ thống con)}
@@ -36,8 +48,32 @@
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_per_profile.eps}
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_ss_profile.eps}
     \caption{Biểu đồ lớp - Quản lý thông tin cá nhân (tích hợp hệ thống con)}
+\end{figure}
+
+\subsubsection{Quản lý thông tin cá nhân (tích hợp cơ chế Persistence)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_per_update_profile.eps}
+    \caption{Biểu đồ tuần tự - Quản lý thông tin cá nhân (tích hợp cơ chế Persistence)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_per_profile.eps}
+    \caption{Biểu đồ lớp - Quản lý thông tin cá nhân (tích hợp cơ chế Persistence)}
+\end{figure}
+
+\subsubsection{Quản lý thông tin cá nhân (tích hợp tất cả)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_per_update_profile.eps}
+    \caption{Biểu đồ tuần tự - Quản lý thông tin cá nhân (tích hợp tất cả)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_per_profile.eps}
+    \caption{Biểu đồ lớp - Quản lý thông tin cá nhân (tích hợp tất cả)}
 \end{figure}
 
 \subsection{Đăng Blog}
@@ -64,28 +100,83 @@
     \caption{Biểu đồ lớp - Đăng Blog (tích hợp Persistence)}
 \end{figure}
 
+\subsubsection{Đăng Blog (tích hợp tất cả)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_per_create_blog.eps}
+    \caption{Biểu đồ tuần tự - Đăng Blog (tích hợp tất cả)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_per_blog.eps}
+    \caption{Biểu đồ lớp - Đăng Blog (tích hợp tất cả)}
+\end{figure}
+
 \subsection{Nhắn tin}
 \subsubsection{Nhắn tin (tích hợp hệ thống con)}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_ss_message.eps}
-    \caption{Biểu đồ tuần tự - Nhắn tin (tích hợp hệ thống con)}
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_ss_searchChatBox.eps}
+    \caption{Biểu đồ tuần tự - Luồng tìm kiếm cuộc trò chuyện với người dùng khác (tích hợp hệ thống con)}
 \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_ss_message.eps}
+    \caption{Biểu đồ tuần tự - Luồng nhắn tin với người dùng khác (tích hợp hệ thống con)}
+\end{figure}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_ss_message.eps}
     \caption{Biểu đồ lớp - Nhắn tin (tích hợp hệ thống con)}
 \end{figure}
+
+
+\subsubsection{Nhắn tin (tích hợp cơ chế Persistence)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_per_searchChatBox.eps}
+    \caption{Biểu đồ tuần tự - Luồng tìm kiếm cuộc trò chuyện với người dùng khác (tích hợp cơ chế Persistence)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_per_message.eps}
+    \caption{Biểu đồ lớp - Nhắn tin (tích hợp cơ chế Persistence)}
+\end{figure}
+
+
 \subsubsection{Nhắn tin (tích hợp Distribution)}
 \begin{figure}[H]
     \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_dis_searchChatBox.eps}
+    \caption{Biểu đồ tuần tự - Luồng tìm kiếm cuộc trò chuyện với người dùng khác (tích hợp cơ chế Distribution)}
+\end{figure}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_dis_message.eps}
-    \caption{Biểu đồ tuần tự - Nhắn tin (tích hợp Distribution)}
+    \caption{Biểu đồ tuần tự - Luồng nhắn tin với người dùng khác (tích hợp Distribution)}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_dis_message.eps}
     \caption{Biểu đồ lớp - Nhắn tin (tích hợp Distribution)}
+\end{figure}
+
+\subsubsection{Nhắn tin (tích hợp tất cả)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_all_searchChatBox.eps}
+    \caption{Biểu đồ tuần tự - Luồng tìm kiếm cuộc trò chuyện với người dùng khác (tích hợp tất cả)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucr_dis_message.eps}
+    \caption{Biểu đồ tuần tự - Luồng nhắn tin với người dùng khác (tích hợp tất cả)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/UseCaseDesignDiagram/ucd_all_message.eps}
+    \caption{Biểu đồ lớp - Nhắn tin (tích hợp tất cả)}
 \end{figure}
 
 \subsection{Tham gia lớp học}
@@ -229,11 +320,31 @@
     \caption{Biểu đồ lớp - Đánh giá khóa học (tích hợp tất cả)}
 \end{figure}
 
-% \subsection{Quản lý hoạt động sinh viên}
-% \subsubsection{Quản lý hoạt động sinh viên (tích hợp hệ thống con)}
-% \subsubsection{Quản lý hoạt động sinh viên (tích hợp Persistence)}
-% \subsubsection{Quản lý hoạt động sinh viên (tích hợp Distribution)}
-% \subsubsection{Quản lý hoạt động sinh viên (tích hợp tất cả)}
+\subsection{Quản lý hoạt động sinh viên}
+\subsubsection{Quản lý hoạt động sinh viên (tích hợp hệ thống con)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{ucr_ss_manage_student_activity.eps}
+    \caption{Biểu đồ tuần tự - Luồng giảng viên chấp nhận yêu cầu tham gia khóa học của sinh viên (tích hợp hệ thống con)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{ucd_ss_manage_student_activity.eps}
+    \caption{Biểu đồ lớp - Quản lý hoạt động sinh viên (tích hợp hệ thống con)}
+\end{figure}
+%\subsubsection{Quản lý hoạt động sinh viên (tích hợp Persistence)}
+%\subsubsection{Quản lý hoạt động sinh viên (tích hợp Distribution)}
+\subsubsection{Quản lý hoạt động sinh viên (tích hợp tất cả)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{ucr_ss_manage_student_activity.eps}
+    \caption{Biểu đồ tuần tự - Luồng giảng viên chấp nhận yêu cầu tham gia khóa học của sinh viên (tích hợp tất cả)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{ucd_ss_manage_student_activity.eps}
+    \caption{Biểu đồ lớp - Quản lý hoạt động sinh viên (tích hợp tất cả)}
+\end{figure}
 
 \subsection{Quản lý hoạt động diễn đàn}
 \subsubsection{Quản lý hoạt động diễn đàn (tích hợp hệ thống con)}
