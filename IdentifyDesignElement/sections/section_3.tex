@@ -11,7 +11,7 @@
 		\textbf{Lớp phân tích} & \textbf{Phần tử thiết kế} \\ \hline
 		LoginBoundary              & LoginPage                \\ \hline
 		CourseContentBoundary      & CourseContentPage        \\ \hline
-		ProfileBoundary            & ProfilePage              \\ \hline
+		ProfileBoundary            & ProfileManagementPage              \\ \hline
 		LessonBoundary             & LessonPage               \\ \hline
 		CourseMaterialBoundary     & CourseMaterialPage       \\ \hline
 		CourseQuizBoundary         & CourseQuizPage           \\ \hline
@@ -20,8 +20,10 @@
 		SearchBoundary             & SearchPage               \\ \hline
 		CourseListBoundary         & CourseListPage           \\ \hline
 		CourseScoreBoundary        & CourseScorePage          \\ \hline
-		ChatBoxBoundary            & ChatBoxPage              \\ \hline
-		ChatListBoundary           & ChatListPage             \\ \hline
+		\mutirow{3}{*}{ChatBoxBoundary}            & SendMessagePage   \\ 
+					   		   & MessageSystem \\
+							   & IMessageSystem \\ \hline
+		ChatListBoundary           & SearchChatBoxPage             \\ \hline
 		SettingBoundary            & SettingPage              \\ \hline
 		ForumBoundary              & ForumPage                \\ \hline
 		TopicBoundary              & TopicPage                \\ \hline
@@ -29,7 +31,18 @@
 		NotificationBoundary       & NotificationPage         \\ \hline
 		CourseAccessManageBoundary & CourseAccessManagePage   \\ \hline
 		AdminPanelBoundary         & AdminPanelPage           \\ \hline
-		BlogBoundary               & BlogSystem               \\ \hline
+		\mutirow{3}{*}{BlogBoundary}               & BlogSystem  \\ 
+						           & IBlogSystem \\
+							   & CreateNewBlogPage \\
+							   & BlogManagementPage \\ \hline
+		SendFeedbackBoundary	& SendFeedbackPage \\ \hline
+AddMemberToCourseBoundary	& AddMemberToCoursePage \\ \hline
+CreateOnlineLiveBoundary	& CreateOnlineLivePage \\ \hline
+AccountActionBoundary	& AccountActionPage \\ \hline
+CourseActionBoundary	& CourseActionPage \\ \hline
+SemesterActionBoundary	& SemesterActionPage \\ \hline
+CourseController	& CourseController \\ \hline
+CourseBoundary	& CoursePage
 		AuthenticationController   & AuthenticationController \\ \hline
 		MessageController          & MessageController        \\ \hline
 		CourseContentController    & CourseContentController  \\ \hline
